@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=z, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="">
+        <h1>Map Function</h1>
+        <p>
+            In Javascript, map() is a method of the Array object. It creates a new array by calling a function on every
+            element of the original array and storing the result in a new array. map() returns the new array, and the
+            original array is unchanged.
+        </p>
+    </div>
+    <div>
+        <h3>Syntax</h3>
+        <p>array.map(function(currentValue, index, arr), thisValue)</p>
+    </div>
+    <div>
+        <!-- diyanmic content render -->
+        <ul id="item-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        const items = [
+            'dfghfgj',
+            'sfdgfgjhj',
+            'aesrfghk',
+            'asdfghkj',
+            'yruytukkjlk.,/.',
+            'sdfghmjbn',
+            'ddhghjkkl',
+            'dzsfdhgjhgjhk',
+            'dzgfhfhgjhk'
+        ];
+
+        const ul = document.getElementById('item-list');
+        const listItems = items.map(item => `<li>${item}</li>`).join('');
+        ul.innerHTML = listItems;
+    </script>
+</body>
+
+</html>

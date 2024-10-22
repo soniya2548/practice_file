@@ -1,0 +1,5090 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins-Regular;
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(../font/Poppins-Regular.ttf);
+}
+
+:root {
+  --blue: #13729b;
+  --orange: #f6811b;
+  /* --red: #c9010f; */
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+div,
+span,
+img,
+ol,
+ul,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+option,
+legend,
+label,
+table,
+th,
+td,
+tr,
+article,
+aside,
+caption,
+figure,
+footer,
+header,
+hgroup,
+mark,
+nav,
+section,
+time,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+
+.wrapper {
+  height: 100%;
+}
+
+img {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+/* img{
+    width: 100%;
+  } */
+
+label {
+  display: inline-block;
+  font-weight: normal;
+  /* margin-bottom: 5px; */
+  max-width: 100%;
+}
+
+a {
+  outline: none;
+  text-decoration: none !important;
+  color: #000 !important;
+}
+
+a img {
+  border: none;
+}
+
+a:active {
+  outline: none;
+  text-decoration: none;
+  opacity: 1;
+}
+
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  outline: none;
+  text-decoration: none;
+  opacity: 1;
+}
+
+button {
+  outline: medium none;
+}
+
+iframe {
+  border: none;
+}
+
+hr {
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+pre {
+  display: block;
+  margin: 0 0 30px;
+  padding: 9.5px;
+  word-wrap: break-word;
+  word-break: break-all;
+  color: #333;
+  border: 1px solid #ededed;
+  border-radius: inherit;
+  background-color: #f9f9f9;
+  font-size: 13px;
+  line-height: 1.42857143;
+}
+
+input {
+  border: 2px solid #b7b7b7c9;
+  border-radius: 10px;
+  padding: 8px 10px;
+  -webkit-box-shadow: inherit;
+  box-shadow: inherit;
+  /* min-height: 50px; */
+}
+
+input:focus {
+  outline: none;
+  -webkit-box-shadow: inherit;
+  box-shadow: inherit;
+}
+
+textarea:focus {
+  outline: none;
+  -webkit-box-shadow: inherit;
+  box-shadow: inherit;
+}
+
+select:focus {
+  outline: none;
+  -webkit-box-shadow: inherit;
+  box-shadow: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0 !important;
+}
+
+b {
+  font-weight: 900;
+}
+
+strong {
+  font-weight: 900;
+}
+
+.row {
+  --bs-gutter-x: 30px;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+p {
+  color: #000;
+  font-size: 15px;
+  margin: 0 !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+/*------ Start Header Section -------*/
+.logo-mobi {
+  display: none;
+}
+
+.home-on-hover {
+  display: none;
+}
+
+.nav-list a:hover .home-on-hover {
+  display: block !important;
+}
+
+.nav-list a:hover .home-off-hover {
+  display: none !important;
+}
+
+.desk-header .nav-list a:hover {
+  color: var(--orange) !important;
+  display: flex;
+  align-items: center;
+}
+
+.drop-black {
+  display: none;
+}
+
+.nav-list li a img {
+  width: 24px;
+  height: 20px;
+}
+
+.head-info img {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+
+nav.navigation {
+  padding: 0 5%;
+  background: #13729b;
+}
+
+.header-portion {
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  top: 0;
+  background: #f3f3f3 !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% 100% !important;
+  background-image: url(../img/bg/top-head-bg.png) !important;
+}
+
+.top-head {
+  padding: 0.2% 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head-info {
+  display: inline-grid;
+  text-align: right;
+}
+
+.head-info ul {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: end;
+}
+
+.head-info ul li {
+  display: inline-flex;
+  margin-left: 2rem;
+  align-items: center;
+}
+
+.head-info ul li span {
+  display: inline-flex;
+  margin-left: 0px;
+}
+
+/* .navigation {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 1005;
+  height: 118px;
+} */
+
+.pd-0 {
+  padding: 0px !important;
+}
+
+ul.nav-list {
+  display: inline-flex;
+  margin: 0;
+  list-style-type: none;
+}
+
+ul.nav-list .active a {
+  color: #000000;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+ul.nav-list li a {
+  color: #ffffff !important;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5px 0;
+}
+
+ul.nav-list li {
+  color: #fff;
+  margin-left: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+ul.nav-list .active::before {
+  background: #f1cf69;
+  width: 53px !important;
+}
+
+.desk-header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.agr-logo {
+  width: 400px;
+}
+
+.logo {
+  width: 70px;
+}
+
+.head-f a {
+  font-size: 21px;
+}
+
+.nav-wrapper ul.nav-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-wrapper ul.nav-list li {
+  margin-left: 30px;
+  padding: 20px 0;
+  position: relative;
+}
+
+.nav-wrapper ul.nav-list li a {
+  color: var(--pure);
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn {
+  background-color: var(--orange) !important;
+  color: #fff !important;
+  outline: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border: 1px solid transparent !important;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: var(--orange);
+  border-color: var(--orange);
+}
+
+.btn-check:active+.btn-primary,
+.btn-check:checked+.btn-primary,
+.btn-primary.active,
+.btn-primary:active,
+.show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: var(--orange);
+  border-color: var(--orange);
+}
+
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
+  color: #fff;
+  background-color: var(--orange);
+  border-color: var(--orange);
+  box-shadow: unset !important;
+}
+
+nav ul.dropdown-list {
+  list-style-type: none;
+  display: block;
+  background: var(--smoke);
+  padding: 6px 16px;
+  position: absolute;
+  width: max-content;
+  z-index: 9999;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav-wrapper ul.dropdown-list li {
+  margin-left: 0;
+  padding: 5px 0;
+}
+
+.nav-wrapper ul.dropdown-list li a {
+  color: var(--dark);
+}
+
+ul.nav-list li:hover .dropdown-list {
+  opacity: 1;
+  pointer-events: auto;
+  animation: moveUp 0.5s ease-in-out forwards;
+}
+
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(20px);
+  }
+}
+
+.hamburger {
+  display: none;
+}
+
+.mobile ul.nav-list {
+  background: -webkit-linear-gradient(45deg, #434343, #000000);
+  background: linear-gradient(45deg, #434343, #00000040);
+  position: fixed;
+  left: 0;
+  top: 0px;
+  width: 95% !important;
+  height: 100%;
+  flex-direction: column;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger,
+.brand {
+  z-index: 99999;
+  text-align: center;
+}
+
+.mobile ul.nav-list.open {
+  /* opacity: 1; */
+  pointer-events: auto;
+  overflow: auto;
+}
+
+.menu-open {
+  overflow: hidden !important;
+  background: rgba(0, 0, 0, .42);
+}
+
+.menu-open .hamburger span {
+  transform-origin: left;
+  transition: all 0.3s ease-in-out;
+  margin-left: 7px;
+}
+
+.mobile ul.nav-list li a {
+  font-size: 18px;
+  /* font-weight: 600; */
+  color: #000;
+}
+
+.side-menu-list {
+  display: none;
+}
+
+.mobile ul.dropdown-list {
+  position: relative;
+  background: transparent;
+  text-align: center;
+  height: 0;
+  overflow-y: hidden;
+  transition: opacity 1s ease-in-out;
+  padding-top: 0;
+}
+
+.mobile .nav-wrapper ul li:hover .dropdown-list {
+  height: max-content;
+  padding-top: 6px;
+}
+
+.mobile ul.nav-list li {
+  padding-left: 15px;
+  margin-left: unset !important;
+}
+
+.mobile ul.nav-list li:hover {
+  background-color: #13729B;
+}
+
+.mobile ul.nav-list li:hover a {
+  color: #fff;
+}
+
+.nav-list li .sub-nav-links li a {
+  color: #000 !important;
+}
+
+.mobile ul.nav-list li:hover a .side-menu-list {
+  border-radius: 50px;
+  text-align: center;
+  padding: 2px;
+  background-color: #fff !important;
+}
+
+.mob-logo {
+  display: none;
+}
+
+.mobile .nav-wrapper ul.dropdown-list li a {
+  color: var(--dark-gray);
+}
+
+.top-bar {
+  width: 100%;
+  text-align: right;
+}
+
+.top-bar ul {
+  padding-right: 4%;
+  width: 100%;
+  background: #f8f8f8;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.top-bar li {
+  display: inline-block;
+  position: relative;
+  margin: 0px 5px;
+}
+
+.head-f {
+  font-weight: bold;
+}
+
+.top-bar li img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding: 3px !important;
+  margin-left: 0px !important;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.top-bar li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+}
+
+.top-bar li span {
+  position: absolute;
+  top: 15px;
+  color: #ef6331;
+  right: 5px;
+  background: #fff;
+  width: 16px;
+  padding: 0pc;
+  height: 16px;
+  font-size: 12px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.top-bar li .cart-i {
+  background-color: transparent;
+  width: 40px;
+  height: 65px;
+  border: unset;
+}
+
+.nav-list .nav-list2 a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-list2 {
+  display: flex;
+}
+
+.nav-list .nav-list2 li::before {
+  bottom: 41px;
+  position: absolute;
+  content: "";
+  /* width: 1%; */
+  height: 2px;
+  margin-left: 55px;
+  background: #f1cf69;
+  transition: all 0.4s ease;
+}
+
+.nav-list li:hover::before {
+  width: 45px;
+  background: var(--green);
+}
+
+.nav-list .login-btn::before {
+  display: none;
+}
+
+.btn-shape {
+  position: absolute;
+  width: 45px;
+  right: -1px;
+  top: 24px;
+}
+
+.l-btn-new::before {
+  display: none;
+}
+
+.header-btn-icon {
+  position: relative;
+  top: 0;
+}
+
+.header-btn-icon {
+  position: relative;
+  top: -32px;
+  right: -15px;
+  width: 20px;
+}
+
+.nav-list span img,
+.head-btn-sec span img {
+  width: 8px !important;
+  height: 8px !important;
+  margin-left: 4px;
+}
+
+.head-btn-sec span {
+  margin-left: 3px;
+}
+
+.head-btn-sec {
+  position: relative;
+}
+
+.drop-orange {
+  display: none;
+}
+
+.desk-header .nav-list a:hover .drop-orange {
+  display: block !important;
+  margin-left: 4px !important;
+}
+
+.desk-header .nav-list a:hover .drop-white {
+  display: none !important;
+}
+
+.hover-social-icons {
+  display: none;
+}
+
+.h-social li span a:hover .hover-social-icons {
+  display: block !important;
+}
+
+.h-social li span a:hover .head-social-icons {
+  display: none !important;
+}
+
+
+
+/* End Header Section */
+
+/* --------------- Custum drop down Start here ------------- */
+
+.head-btn-sec .sub-nav-links {
+  width: 99px !important;
+  justify-content: left;
+  right: 0;
+  top: 38px !important;
+  left: unset !important;
+  min-width: unset !important;
+}
+
+.head-btn-sec .sub-nav-links li {
+  margin-left: unset !important;
+  padding: 5px;
+  font-size: 15px;
+
+}
+
+
+.nav-list .sub-nav-links,
+.head-btn-sec .sub-nav-links {
+  width: 200px;
+  display: none !important;
+  position: absolute;
+  top: 32px;
+  left: -20px;
+  background-color: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+}
+
+
+.nav-list li:hover .sub-nav-links,
+.head-btn-sec li:hover .sub-nav-links {
+  display: block !important;
+}
+
+.nav-list .sub-nav-links li a,
+.head-btn-sec .sub-nav-links li a {
+  color: #000;
+  display: inline-flex !important;
+  margin-left: 0 !important;
+}
+
+.nav-list .sub-nav-links li {
+  display: block;
+  margin: 0px !important;
+  padding: 0 10px !important;
+}
+
+.nav-list .sub-nav-links li:hover,
+.head-btn-sec .sub-nav-links li:hover {
+  background: var(--orange) !important;
+  width: 100%;
+}
+
+.nav-list .sub-nav-links li:hover a,
+.head-btn-sec .sub-nav-links li:hover a {
+  color: #fff !important;
+  width: 100%;
+}
+
+.h-whatsapp {
+  display: none;
+}
+
+/* --------------- custum drop down end here ------------- */
+
+
+/* ---- Start Banner Section ---- */
+
+
+
+/* .banner-area img{
+  height: 475px;
+} */
+.banner-area {
+  position: relative;
+  margin-top: 8.9rem;
+  /* padding-top: 10px; */
+}
+
+.bannr-cont {
+  position: absolute;
+  top: 9rem;
+  left: 5rem;
+}
+
+.h-bannr-btn .btn {
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: unset !important;
+  border: unset !important;
+  padding: 0 0 0 15px !important;
+  background-color: var(--blue) !important;
+}
+
+.h-bannr-btn span {
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  margin-left: 15px;
+  border-radius: 0px 3px 3px 0px;
+  display: inline-block;
+  background: transparent linear-gradient(180deg, #FA9717 0%, #F99318 11%, #F26421 100%) 0% 0% no-repeat padding-box;
+}
+
+.h-bannr-btn span img {
+  width: 18px;
+  display: unset;
+}
+
+.bannr-cont h1 {
+  font-size: 3vw;
+  font-weight: 600;
+  color: var(--orange);
+  margin-bottom: 2rem;
+}
+
+.bannr-cont h3 {
+  font-size: 1.5vw;
+  color: #434343;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.bannr-cont p {
+  color: #434343;
+  font-size: 15px;
+  width: 25vw;
+}
+
+.h-bannr-btn {
+  margin-top: 3rem;
+}
+
+.second-slide h1,
+.third-slide h1,
+.fourth-slide h1,
+.fifth-slide h1 {
+  font-size: 2vw;
+  font-weight: unset;
+  color: var(--blue);
+  line-height: 60px;
+}
+
+.second-slide h1 span,
+.third-slide h1 span,
+.fourth-slide h1 span,
+.fifth-slide h1 span {
+  font-size: 2.7vw;
+  display: block;
+  color: #fff;
+  background: var(--blue);
+  border-radius: 5px;
+  font-weight: 600;
+  line-height: 50px;
+  text-align: center;
+}
+
+.second-slide h1 strong,
+.third-slide h1 strong,
+.fourth-slide h1 strong,
+.fifth-slide h1 strong {
+  font-size: 3vw;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.third-slide h1 {
+  color: #3D3D3D;
+}
+
+.third-slide h1 span {
+  font-size: 2.5vw;
+  line-height: 56px;
+  padding: 0 5px;
+  background-color: var(--orange);
+}
+
+.third-slide h1 strong {
+  font-size: 2vw;
+  font-weight: 900;
+  text-transform: unset;
+}
+
+.fourth-slide h1 {
+  font-size: 2.2rem;
+  width: 21.3rem !important;
+}
+
+.fourth-slide h1 strong {
+  font-size: 2.5vw;
+  text-transform: unset;
+}
+
+.fourth-slide h1 span {
+  font-size: 2.5vw;
+  line-height: 55px;
+}
+
+.fifth-slide h1 strong {
+  font-size: 2.5vw;
+  display: block;
+}
+
+.fifth-slide h1 span {
+  width: 22vw;
+}
+
+.banner-area .fourth-slide h1 {
+  width: 21.3rem !important;
+}
+
+
+
+/* ---- End Banner Section ---- */
+
+/* ---- Start Best Surgeon Section ---- */
+
+/* .surgeon-section {
+  padding: 20px;
+} */
+
+.surgeon-section h2 {
+  color: var(--blue);
+  font: normal normal bold 30px / 30px Poppins-Regular;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+  opacity: 1;
+  position: relative;
+}
+
+.surgeon-section h2::after {
+  content: "";
+  position: absolute;
+  top: 38px;
+  background-color: #13729b91;
+  width: 60%;
+  height: 1px;
+  left: 0px;
+}
+
+.surgeon-section h3 {
+  font: normal normal bold 25px / 54px Poppins-Regular;
+  letter-spacing: 0px;
+  color: #F6811B;
+  opacity: 1;
+}
+
+.surgeon-section h4 {
+  font-size: 16px;
+  color: var(--blue);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.surgeon-section p {
+  font: normal normal normal 15px / 22px Poppins-Regular;
+  letter-spacing: 0px;
+  color: #3D3D3D;
+}
+
+.surgeon-section a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.education-experience {
+  margin-bottom: 1.5rem;
+  background: transparent linear-gradient(82deg, #E1E1E1 -1%, #F4F4F4 0%, #F8F8F8 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+  border-radius: 7px;
+  padding: 10px 18px;
+}
+
+.education-experience h4 {
+  font: normal normal bold 19px/33px Poppins-Regular;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.education-experience ul {
+  list-style: none;
+}
+
+.education-experience ul li {
+  font-size: 17px;
+  color: #555;
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 25px;
+  line-height: 30px;
+}
+
+.education-experience ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  color: #13729B;
+  top: 9px;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url(../img/icons/arrow-heading.png);
+}
+
+.surgeon-img img {
+  border-radius: 15px;
+}
+
+.shape-stethoscope {
+  position: absolute;
+  top: 2rem;
+  right: 13rem;
+  width: 150px;
+}
+
+.best-surgeon {
+  position: relative;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.surgeon-img {
+  width: 90%;
+}
+
+
+
+/* ---- End Best Surgeon Section ---- */
+
+
+/* ---- Start Introduction Dr. Belal Section ----- */
+
+.introdu-belal {
+  background-color: #F6FBFF;
+  padding: 2rem 0;
+  margin: 1.5rem 0;
+}
+
+.intro-post img {
+  width: 75%;
+}
+
+.intro-cont h2 {
+  margin-bottom: 1rem;
+  color: var(--orange);
+  font: normal normal bold 30px / 30px Poppins-Regular;
+}
+
+.intro-cont h4 {
+  font-size: 16px;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.intro-cont p {
+  font-size: 15px;
+  margin-top: 1.5rem !important;
+}
+
+
+/* ---- End Introduction Dr. Belal Section ----- */
+
+
+/* ---- Start counter section css ---- */
+
+.counter-sec {
+  margin: 1rem 0;
+  padding: 2rem 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url(../img/bg/counter-bg.png);
+}
+
+
+.counter-st .count .counting,
+.operator {
+  font: normal normal bold 35px / 38px Poppins-Regular;
+  color: var(--blue);
+}
+
+.counter-cont .counting {
+  color: var(--blue);
+  font: normal normal bold 35px / 38px Poppins-Regular;
+}
+
+.count-head {
+  margin-bottom: 2rem;
+}
+
+.counter-st .count-name {
+  color: #fff;
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+.count-icon {
+  width: 60px;
+  margin-right: 8px;
+}
+
+.counter-right {
+  margin-right: 144px;
+}
+
+.counter-left {
+  margin-left: 144px;
+}
+
+.count-exper {
+  display: inline-block;
+  margin-left: 44px;
+}
+
+.count-surgeon {
+  margin-left: 50px;
+}
+
+.count-head h2 {
+  color: var(--blue);
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.count-head p {
+  color: #434343;
+  font-size: 15px;
+}
+
+.count-img-sec {
+  position: relative;
+  right: -112px;
+  bottom: -41px;
+}
+
+.count-value span {
+  font-size: 18px;
+  margin-left: 12px;
+  margin-right: 67px;
+  position: relative;
+}
+
+.count-value span::before {
+  content: "";
+  position: absolute;
+  top: 59px;
+  background-color: #f6811b73;
+  width: 70px;
+  height: 2px;
+  left: 0px;
+}
+
+
+/* --- End counter section css ---- */
+
+/* ----- Start Comprehensive Thoracic Surgical Service ----- */
+
+.surgical-service {
+  margin: 2rem 0;
+  padding: 2rem 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url(../img/bg/surgical-service-bg.png);
+}
+
+.surgical-head {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.surgical-head h2 {
+  color: var(--blue);
+  font-size: 28px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.surgical-head p {
+  color: #3D3D3D;
+  font-size: 15px;
+}
+
+.surg-list-icon img {
+  width: 70px;
+  height: 70px;
+}
+
+.surgical-list {
+  text-align: center;
+  padding: 0 3rem;
+}
+
+.surgical-list h5 {
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+.surgical-list p {
+  color: #434343;
+  font-size: 15px;
+}
+
+.surgi-list-border {
+  border-right: 1px dotted #434343;
+}
+
+
+
+
+
+
+
+/* ----- End Comprehensive Thoracic Surgical Service ----- */
+
+
+
+/* ---- Start Commitment Excellence Section ---- */
+
+.commit-ex {
+  margin: 2rem 0;
+  padding: 5rem 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url(../img/bg/belal-commit-bg.png);
+}
+
+.commit-exc-cont h3 {
+  color: var(--blue);
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.commit-exc-cont p {
+  color: #434343;
+  font-size: 15px;
+  margin-top: 2rem !important;
+}
+
+/* ---- End Commitment Excellence Section ---- */
+
+/* --- Start Awards and Recognitions Section --- */
+.award-section h2 {
+  color: var(--blue);
+  font: normal normal bold 30px / 40px Poppins-Regular;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+  opacity: 1;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.award-section h2::before {
+  content: "";
+  position: absolute;
+  top: 45px;
+  background-color: var(--blue);
+  width: 230px;
+  height: 1px;
+  left: 0px;
+}
+
+.award-section h4 {
+  color: var(--orange);
+  font: normal normal bold 20px / 45px Poppins-Regular;
+  letter-spacing: 0px;
+  /* text-transform: capitalize; */
+  opacity: 1;
+  position: relative;
+}
+
+.award-rec {
+  background-image: url(../img/bg/Trophy-image.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top: 43px;
+  padding: 35px 0;
+}
+
+.award-section ul {
+  margin-left: 17px;
+}
+
+.award-section ul li {
+  line-height: 35px;
+  position: relative;
+  margin-left: 10px;
+}
+
+.award-section ul li::before {
+  content: "";
+  background-image: url(../img/icons/trophy-icon.png);
+  background-size: cover;
+  position: absolute;
+  left: -28px;
+  top: 7px;
+  width: 20px;
+  height: 20px;
+}
+
+/* ---- End Awards and Recognitions Section ---  */
+
+/* -- Start Chest Surgeon -- */
+section.chest-surgeon {
+  padding: 2rem 0;
+}
+
+.main-head {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.main-head h2 {
+  font-size: 30px;
+  color: var(--blue);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.main-head p {
+  color: #5A5A5A;
+  font-size: 15px;
+}
+
+.explore-btn {
+  float: right;
+}
+
+.explore-btn a {
+  color: #434343;
+
+}
+
+.explore-btn span {
+  display: inline-block;
+  width: 18px;
+}
+
+.chest-slider {
+  margin-top: 2rem;
+}
+
+.chest-card {
+  padding: 10px;
+  border: unset;
+  background: transparent linear-gradient(180deg, #FAFAFA 0%, #F3F4F6 37%, #E1E3ED 90%, #DDE0EB 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 3px 3px 3px #46547036;
+  border-radius: 5px;
+  height: auto;
+}
+
+.chest-card-cont {
+  position: relative;
+  padding: 10px;
+  background: transparent linear-gradient(226deg, #FAFAFA 0%, #EDEEF3 100%) 0% 0% no-repeat padding-box;
+  border-radius: 0 0 5px 5px;
+}
+
+.chest-card-btn {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.chest-card-head {
+  font-size: 17px !important;
+  position: absolute;
+  background: #F7F7F9;
+  padding: 8px 13px;
+  border-radius: 20px;
+  /* top: -14px;
+  left: 56px; */
+  /* width: 195px; */
+  text-align: center;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.chest-card-cont .card-text {
+  margin-top: 1rem !important;
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.chest-slider .slick-slide {
+  margin: 10px 15px;
+}
+
+
+/* -- End Chest Surgeon -- */
+/* -- start css patient-information-video -- */
+.Video-info-slider video {
+  border-radius: 5px;
+}
+
+.patient-information-video {
+  background-image: url(../img/bg/video-sec-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* margin-top: 43px; */
+  padding: 20px 0;
+}
+
+.Video-info-slider .card {
+  margin: 20px;
+  border: unset;
+  border-radius: 5px;
+}
+
+.heading-sec {
+  position: relative;
+}
+
+.heading-sec .explore-btn {
+  position: absolute;
+  top: 6px;
+  right: 0px;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: #13729B !important;
+  font-size: 30px;
+  /* height: 5px; */
+}
+
+.slick-dots li button:before {
+  font-size: 30px !important;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  color: #13729B !important;
+}
+
+.slick-dots li {
+  margin: 0 0px !important;
+}
+
+/* -- End css patient-information-video -- */
+
+/* -- start css blog-and-articles -- */
+
+.feature-head {
+  text-align: center;
+}
+
+.feature-blog h3 {
+  color: var(--blue);
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+  margin-right: 8rem;
+  height: auto;
+  min-height: 53px;
+}
+
+.blog-and-articles {
+  position: absolute !important;
+  bottom: -125px;
+  right: 0;
+  left: 0;
+}
+
+.blog-and-articles .card {
+  margin: 20px;
+  border: unset;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+/* .border-bottom-head {
+  padding-bottom: 8px;
+  border-bottom: 1px dotted #FFC933;
+} */
+
+.blog-and-articles .chest-card-cont {
+  background: #fff;
+  border-bottom: 15px solid #13729B;
+}
+
+.blog-and-articles .slick-slide img {
+  height: 210px;
+  display: block;
+  border-bottom: 4px solid #F6811B;
+}
+
+.feature-blog {
+  margin-top: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 23rem;
+  margin-bottom: 9rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url(../img/bg/feature-blog-bg.png);
+  position: relative;
+
+}
+
+.feature-blog a {
+  color: #3A00FF;
+  font-size: 15px;
+}
+
+.feature-cont h2 {
+  color: var(--blue);
+  margin-bottom: 10px;
+  font-weight: 600;
+  position: relative;
+  width: max-content;
+  margin: auto;
+}
+
+.feature-cont h5 {
+  color: #1E1D1D;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.feature-blog .explore-btn {
+  float: right;
+}
+
+.feature-cont h2::before {
+  content: "";
+  background-image: url(../img/icons/dobble-arrow-left.png);
+  background-size: cover;
+  position: absolute;
+  left: -31px;
+  top: 8px;
+  width: 20px;
+  height: 16px;
+}
+
+.feature-cont h2::after {
+  content: "";
+  background-image: url(../img/icons/dobble-arrow-right.png);
+  background-size: cover;
+  position: absolute;
+  right: -28px;
+  top: 25px;
+  width: 20px;
+  height: 16px;
+}
+
+.feature-cont .explore-btn a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+  color: #434343;
+}
+
+.blog-and-articles .item a {
+  color: #5A5A5A;
+}
+
+.blog-and-articles .card-text .blog-link {
+  color: #3A00FF !important;
+}
+
+/* -- end css blog-and-articles -- */
+
+/* ----- Start Book Appointment Section ---- */
+
+
+.Corporate-Office {
+  padding: 2% 0;
+  background-repeat: no-repeat;
+  background: url(../img/bg/form-background.png);
+  background-size: 100% 100%;
+}
+
+.Office-col-cont {
+  margin-top: 15px;
+}
+
+.Office-col-cont h5 {
+  color: #F6811B;
+  margin-bottom: 15px;
+}
+
+.Office-col-cont .sub-head {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  line-height: 30px;
+  color: #13729B;
+  border-bottom: 0.5px solid #434343;
+  padding-bottom: 30px;
+}
+
+.Office-col-cont .better-head {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.Office-col-cont p {
+  font-size: 15px;
+  color: #5A5A5A;
+  margin-bottom: 20px !important;
+}
+
+.Office-col-cont p strong {
+  color: #000 !important;
+}
+
+.Office-col-cont ul {
+  /* padding: 0; */
+  margin-bottom: 28px !important;
+  border-bottom: 0.5px solid #434343;
+}
+
+.h-mobile {
+  display: flex;
+  align-items: baseline;
+}
+
+.h-mobile span {
+  width: 25px;
+  margin-right: 8px;
+}
+
+.h-mobile p {
+  font-size: 17px;
+  color: #444242;
+}
+
+.cont button {
+  color: #3A00FF;
+  border: none;
+  background: none;
+  font-size: 13px;
+}
+
+/* form */
+.book-appoint {
+  margin: 37px 10px;
+}
+
+#form h3 {
+  display: flex;
+  justify-content: center;
+  color: #1D1C1C;
+}
+
+#form p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0 19%;
+  font-size: 15px;
+  color: #4E4E4E;
+}
+
+#form {
+  margin: 0 20%;
+  padding: 43px 0;
+  box-shadow: 6px 9px 6px #00000063;
+  background: #F9F9F9;
+}
+
+
+.form-lists input,
+.form-lists select {
+  border: unset !important;
+  border-bottom: 1px solid #707070 !important;
+  line-height: 37px !important;
+  font-size: 12px !important;
+  width: 100%;
+  color: #000 !important;
+  padding: unset !important;
+  background: unset !important;
+  border-radius: unset !important;
+}
+.form-lists input,
+.form-lists select::placeholder{
+  color: #B8B8B8;
+}
+
+.form-lists select {
+  line-height: 37px !important;
+  font-size: 12px;
+  color: #000 !important;
+}
+
+.form-item #topup-icon {
+  position: relative;
+  margin: unset !important;
+}
+
+.form-item #topup-icon img {
+  top: 43px !important;
+}
+
+/* .form-l {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+} */
+
+.form-head {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-item {
+  display: flex;
+  margin: 1rem 0;
+  align-items: center;
+}
+
+.form-icons {
+  width: 15%;
+}
+
+.form-field {
+  width: 85%;
+}
+
+.book-appoint {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 23px #00000029;
+  border-radius: 5px;
+  margin: auto;
+  padding: 2rem 2.5rem;
+}
+
+.form-head h3 {
+  color: #1D1C1C;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.form-head p {
+  color: #4E4E4E;
+  font-size: 15px;
+}
+
+.form-l i {
+  font-size: 27px;
+}
+
+.form-l label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  color: #1D1C1C;
+}
+
+.form-lists .submit-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.form-icons img {
+  width: 32px;
+}
+
+/* .btn {
+  background: #2E81AC;
+  color: #fff;
+  border-radius: 4px;
+  padding: 7px 27px;
+} */
+
+.btn:hover {
+  background: #2E81AC;
+  color: #fff;
+}
+
+.arrow-img {
+  padding: 8px 10px;
+  /* background: #FF543E; */
+  background: transparent linear-gradient(180deg, #FA9717 0%, #F99318 11%, #F26421 100%);
+  position: relative;
+  left: 27px;
+  border-radius: 0 4px 4px 0;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: none !important;
+  outline-width: 0;
+}
+
+.submit-btn .btn {
+  padding: 0 0 0 40px !important;
+}
+
+.submit-btn span {
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  margin-left: 30px;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+}
+
+
+/* ----- End Book Appointment Section ---- */
+
+
+
+
+
+
+/* Start Thoracic Oncology section  */
+
+.Thoracic_Oncology {
+  position: relative;
+  margin: 30px 0;
+}
+
+.Thoracic_Oncol_head {
+  position: relative;
+}
+
+.Thoracic_Oncol_head .explore-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.Thoracic_Oncol_head h2 {
+  color: var(--blue);
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.Thoracic_Oncol_head p {
+  color: #5A5A5A;
+  font-size: 15px;
+  margin-bottom: 10px !important;
+  width: 77%;
+
+}
+
+.Thoracic-card {
+  margin-top: 2rem;
+}
+
+.thoracic-card-cont {
+  /* margin-top: 25px; */
+  align-items: center;
+  padding: 10px 15px;
+  border: unset;
+  display: flex;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 1px 1px 16px #00000029;
+  border-radius: 8px !important;
+  height: auto;
+}
+
+.thoracic-card-cont:hover {
+  background: transparent linear-gradient(180deg, #FFFFFF 0%, #D8F3FF 100%) 0% 0% no-repeat padding-box;
+}
+
+.feature-blog span {
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.feature-blog span img {
+  width: 15px;
+  height: 15px !important;
+  margin-right: 5px;
+  border: unset !important;
+}
+
+.feature-blog .card-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--orange);
+  margin-bottom: unset;
+}
+
+/* .card-text {
+  font-size: 15px;
+  color: #3D3D3D;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+} */
+
+.arrow {
+  width: 35px;
+  background: unset;
+  border-radius: 3px;
+  border: unset;
+  float: right;
+}
+
+.arrow img {
+  width: 20px;
+}
+
+
+.thoracic-img {
+  margin-right: 1rem;
+  border-radius: 50px;
+  border: 1px dashed #13729B;
+}
+
+.thoracic-icons {
+  margin: 4px;
+  width: 75px;
+  height: 75px;
+  background: #13729B;
+  border-radius: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thoracic-icons img {
+  width: 70px;
+  height: 70px;
+}
+
+/* .thoracic-cont {
+  padding-top: 15px;
+} */
+
+.thoracic-cont h5 {
+  font-size: 16px;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.thoracic-cont p {
+  color: #3D3D3D;
+}
+.stethoscope {
+  position: absolute;
+  right: 10%;
+  top: -15px;
+  width: 12%;
+}
+
+.stethoscope img {
+  width: 100%;
+}
+
+/* End Start Thoracic Oncology section  */
+
+
+/* ----- start Testimonial Section ------ */
+
+.testi-explore a {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: #434343;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.testi-explore a img {
+  width: 18px;
+  height: 15px;
+  margin-left: 5px;
+}
+
+.testi_banner {
+  padding: 2rem 0 0 0;
+  position: relative;
+  background: url(../img/bg/Testimonial_background_simple.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .testi-explore {
+  padding: 2% 5%;
+  border-radius: 10px;
+} */
+
+.test-cont {
+  position: relative;
+  top: 6px;
+  padding-bottom: 4rem;
+}
+
+.test-cont h3 {
+  color: #13729B;
+  font-weight: bold;
+}
+
+.box {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.orange {
+  background-color: #F6811B;
+}
+
+.test-cont h4 {
+  color: #13729B;
+  border-bottom: 2px solid #13729B;
+  padding-bottom: 21px;
+  z-index: 0;
+  position: relative;
+  width: 71%;
+}
+
+.test-cont h5 {
+  color: #343434;
+  display: flex;
+}
+
+.review-name h6 {
+  color: #2D2B2B;
+}
+
+.review-name span {
+  color: #2D2B2B;
+}
+
+.t-cont {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  left: 12px;
+  top: 6px;
+}
+
+.t-cont img {
+  margin-bottom: 10px;
+}
+
+.testi-star {
+  position: relative;
+  top: 5px;
+  right: 5px;
+  width: 11%;
+}
+
+.testi-star img {
+  width: 20%;
+}
+
+.testi-review {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide-arrow {
+  display: flex;
+  padding-right: 30%;
+}
+
+.slide-arrow .left {
+  background: #F6811B;
+  padding: 10px 10px;
+  transform: rotate(180deg);
+  margin-right: 19px;
+  cursor: pointer;
+}
+
+.slide-arrow .right {
+  background: #F6811B;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.t-cont span p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.testi-para {
+  background-color: var(--blue);
+  position: relative;
+  border-radius: 10px;
+  padding: 20px 45px;
+  top: 20px;
+  margin-bottom: 35px;
+}
+
+.testi-para .text-read-m {
+  color: #FFFFFF;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+
+
+#more-test {
+  display: none;
+}
+
+#more-tests {
+  display: none;
+}
+
+.pro-para {
+  color: #FFFFFF;
+  font-size: 13px;
+  line-height: 24px;
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; */
+}
+
+.testi-para a {
+  color: #3A00FF;
+  font-size: 13px;
+}
+
+.pro-para button {
+  color: #3A00FF;
+  border: none;
+  background: none;
+  font-size: 13px;
+}
+
+.double_arrow1 {
+  position: absolute;
+  left: 21px;
+  top: 27px;
+}
+
+.double_arrow2 {
+  position: absolute;
+  right: 14px;
+  bottom: 11px;
+}
+
+.double_arrow1 img {
+  width: 20px;
+}
+
+.double_arrow2 img {
+  width: 20px;
+}
+
+.testimonial-slider button.slick-next.slick-arrow {
+  left: 32%;
+  top: 86%;
+}
+
+.testimonial-slider button.slick-prev.slick-arrow {
+  left: 26%;
+  z-index: 999;
+  top: 86%;
+}
+
+.testimonial-slider .slick-next:before {
+  content: "";
+  background-image: url(../img/icons/right.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--orange);
+  position: absolute;
+  left: 0;
+  top: -24px;
+  width: 38px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 22px;
+  opacity: unset;
+}
+
+.testimonial-slider .slick-prev:before {
+  content: "";
+  background-image: url(../img/icons/left.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--orange);
+  position: absolute;
+  left: 0;
+  top: -24px;
+  width: 38px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 22px;
+  opacity: unset;
+}
+
+/* ----- End Testimonial Section ------ */
+
+
+
+
+/* ---- Start Footer Section ----- */
+
+
+.footer {
+  background-image: url(../img/bg/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  padding-bottom: 10px;
+}
+
+
+
+.f-phone {
+  font-size: 25px !important;
+  font-weight: 600 !important;
+}
+
+.foot-lable {
+  color: #fff;
+  font-weight: 600;
+  font-size: 17px !important;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.footer ul li {
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: unset !important;
+  padding: 0.3rem 0;
+}
+
+.footer ul li:hover a {
+  color: var(--orange);
+}
+
+.footer ul li a {
+  color: #ffffffe0;
+  text-decoration: none;
+}
+
+.f-social {
+  display: flex;
+  justify-content: center;
+}
+
+.f-social li {
+  margin: 0px 2px;
+}
+
+.footer-bottom {
+  background-image: url(../img/bg/f-techture.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 15px 30px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin-bottom: 0px;
+  color: #1D1C1C;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.footer-bottom span a {
+  color: var(--skyblue);
+}
+
+.f-social-icon i {
+  color: #fff !important;
+  font-size: x-large;
+}
+
+.f-items {
+  padding-left: 0px !important;
+}
+
+.social-icon-footer {
+  padding-left: 0px !important;
+}
+
+
+.f-adr-sec .f-items .f-social-icon span .hover-social-icons {
+  display: none;
+}
+
+.f-adr-sec .f-items .f-social-icon span a:hover .hover-social-icons {
+  display: inline-block !important;
+}
+
+.f-adr-sec .f-items .f-social-icon span a:hover .head-social-icons {
+  display: none !important;
+}
+
+.nav-list {
+  position: relative;
+}
+
+.dropdown-menu {
+  width: 100%;
+  top: 55px;
+  left: 0;
+}
+
+.head-drop-lable {
+  font-size: 20px;
+}
+
+.f-social-icon a img {
+  width: 30px !important;
+  height: 30px !important;
+  margin-right: 10px;
+}
+
+.foot-lable::after {
+  width: 30px;
+  height: 2px;
+  content: "";
+  position: absolute;
+  left: 0rem;
+  top: 1.8rem;
+  background-color: var(--orange);
+}
+
+.f-mobi .foot-lable::after {
+  display: none;
+}
+
+.f-mobi .f-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.f-mobi .f-items li span {
+  padding: 0px 10px;
+}
+
+.timing-box {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+  padding: 10px;
+  position: relative;
+}
+
+.time-shedule {
+  background: #F6811B 0% 0% no-repeat padding-box;
+  border-radius: 0 0 6px 6px;
+  opacity: 1;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+  bottom: -32px;
+  padding: 4px 10px;
+  text-align: center;
+}
+
+.timing-box .watch {
+  position: absolute;
+  top: -2px;
+  right: -50px;
+}
+.timing-box h6{
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom:5px;
+}
+.footer-list {
+  display: none;
+}
+
+.f-time-schedule {
+  display: none;
+}
+
+li.f-social-icon {
+  margin-top: 0.8rem;
+}
+
+
+/* Footer Clock CSS Start*/
+#clockContainer {
+  height: 7vw;
+  width: 7vw;
+  background: url(../img/icons/watch.png) no-repeat;
+  background-size: 100%;
+}
+#hour,
+#minute,
+#second {
+  position: absolute;
+  background: black;
+  border-radius: 10px;
+  transform-origin: bottom;
+}
+#hour {
+  width: 1.8%;
+  height: 25%;
+  top: 25%;
+  left: 48.85%;
+  opacity: 0.8;
+}
+#minute {
+  width: 1.6%;
+  height: 30%;
+  top: 19%;
+  left: 48.9%;
+  opacity: 0.8;
+}
+#second {
+  width: 1%;
+  height: 40%;
+  top: 9%;
+  left: 49.25%;
+  opacity: 0.8;
+}
+/* Footer Clock CSS End */
+
+
+
+
+/* ---- End Footer Section ----- */
+
+.read-more-content {
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  max-height: 70px;
+  width: 200px;
+}
+
+.read-more-toggle {
+  cursor: pointer;
+  color: blue;
+  display: block;
+}
+
+
+
+/* --------- Start Awards Page Css ------------ */
+
+#award-bannr h2,
+#achievement h2,
+#publication-bnnr h2,
+#robotic-thyme h2 {
+  font-size: 2.5vw;
+  line-height: 55px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+#award-page .award-section {
+  width: 65%;
+}
+
+#award-page .award-section ul li {
+  line-height: 25px;
+  margin-top: 13px;
+  color: #3D3D3D;
+  font-size: 15px;
+}
+
+#award-page .award-section ul li::before {
+  top: 2px;
+}
+
+#award-page .award-section h4 {
+  margin-top: 30px;
+  font: normal normal bold 20px / 30px Poppins-Regular;
+}
+
+/* #award-page .award-section h2 {
+  width: 50%;
+  padding-bottom: 14px;
+  border-bottom: 1px solid;
+} */
+.award-list {
+  padding-bottom: 20px;
+  border-bottom: 2px solid;
+  border-color: rgba(97, 97, 97, 0.567);
+}
+
+.award-recog-list {
+  margin: 2rem 0;
+}
+
+.award-listing {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 10px #00000029;
+  border-radius: 50px 0px;
+  display: flex;
+  align-items: center;
+  padding: 2rem 1.5rem;
+}
+
+.award-listing span {
+  margin-right: 1rem;
+  width: 84px;
+}
+
+.award-listing span img {
+  width: 95px;
+}
+
+
+
+
+/* --------- End Awards Page Css ------------ */
+
+/* --------- Start Achievement Page Css ------------ */
+#achievement-page .award-section ul li::before {
+  background-image: url(../img/icons/achieve-icon.svg);
+  left: -68px;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+}
+
+#achievement-page .award-section ul li {
+  line-height: 25px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#achievement-page {
+  background-image: none !important;
+  /* background: transparent linear-gradient(30deg, #E1E1E1 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box !important; */
+  background: transparent linear-gradient(18deg, #E1E1E1 4%, #FFFFFF 53%) 0% 0% no-repeat padding-box !important;
+}
+
+.achieve-img {
+  padding: 2rem 0;
+}
+
+.achieve-card img {
+  width: 400px;
+  height: 291px;
+}
+
+.achieve-img-sec img {
+  width: 85%;
+}
+
+.achieve-img-sec {
+  text-align: end;
+}
+
+/* --------- Start Achievement Page Css ------------ */
+
+
+/* --------- Start Chest Surgeon page Section ---------- */
+
+#chest-surgeon-bannr .bannr-cont {
+  position: absolute;
+  top: 5rem;
+  left: 7rem;
+}
+
+#chest-surgeon-bannr h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--orange);
+  margin-bottom: 25px;
+}
+
+#chest-surgeon-bannr h2 span {
+  color: var(--blue) !important;
+}
+
+#chest-surgeon-bannr p {
+  color: #4C4C4C;
+  padding-left: 7px;
+  border-left: 4px solid;
+  border-color: var(--orange);
+}
+
+#chest-surgeon-bannr p span img,
+#opd-bannr .bannr-cont p span img {
+  width: 30px;
+  margin-top: 6px;
+}
+
+#chest-treatment .Thoracic_Oncol_head h2 {
+  margin-bottom: 24px;
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+  width: 26%;
+}
+
+/* --------- End Chest Surgeon page Section ---------- */
+
+/* --------- Start Video page Section ---------- */
+
+.video-bannr span {
+  display: block;
+  margin-top: 15px;
+}
+
+.video-bannr .bannr-cont p {
+  width: 38vw !important;
+}
+
+#opd-sec h2 {
+  padding-bottom: 10px;
+}
+
+#video-sec .Thoracic-card video {
+  border-radius: 5px !important;
+}
+
+#video-sec .Thoracic-card .card {
+  border-radius: 5px !important;
+}
+
+.videos-frame {
+  height: 235px;
+}
+
+.videos-frame iframe {
+  border-radius: 5px !important;
+  height: 235px;
+}
+
+
+/* --------- End Video page Section ---------- */
+
+
+/* --------- Start Publication page Section ---------- */
+#chap-book ul li span {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+#chap-book ul li {
+  margin: 20px 0;
+  font-size: 15px;
+  color: #3D3D3D;
+}
+
+#chap-book ul li h5 {
+  font-size: 17px;
+  color: #272626;
+}
+
+#chap-book {
+  padding-bottom: 2rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url(../img/bg/chapter-book-bg.png);
+}
+
+.journal-sec ul li .journal-list span {
+  display: inline-block;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.journal-list span img {
+  width: 30px;
+  height: 30px;
+}
+
+/* .journal-list {
+  display: inline-flex;
+} */
+
+.journal-sec .journal-list {
+  padding: 20px;
+  background: transparent linear-gradient(180deg, #FAFAFA 0%, #EDEEF3 100%) 0% 0% no-repeat padding-box;
+  box-shadow: -1px 4px 5px #0000000F;
+  border: 0.5px solid #B2B2B2;
+  border-radius: 5px;
+  height: 210px;
+  position: relative;
+}
+
+.journal-sec ul li p {
+  font-size: 15px;
+  color: #5A5A5A;
+}
+
+.journal-sec {
+  padding: 20px 0;
+}
+
+.journal-head {
+  width: 18%;
+  margin-bottom: 20px;
+}
+
+.journal-head h2 {
+  color: var(--blue);
+  font: normal normal bold 30px / 40px Poppins-Regular;
+  padding-bottom: 5px;
+  position: relative;
+}
+.journal-head h2::before{
+  content: "";
+  position: absolute;
+  top: 40px;
+  background-color: var(--blue);
+  width: 48%;
+  height: 1.5px;
+  left: 0px;
+}
+
+#publication-bnnr .bannr-cont {
+  top: 7.5rem;
+}
+
+.journal-list a {
+  color: #3A00FF;
+}
+
+.journal-list .h-bannr-btn {
+  display: flex;
+  background-color: var(--blue);
+  color: #fff;
+  padding: 0 10px;
+  border-radius: 3px;
+  padding-right: 0 !important;
+  font-size: 15px;
+  align-items: center;
+}
+
+.journal-list .h-bannr-btn span {
+  width: 35px !important;
+  height: 35px !important;
+  margin-right: unset !important;
+  margin: auto;
+  text-align: center;
+  margin-left: 7px !important;
+}
+
+.journal-list .h-bannr-btn span img {
+  width: 18px !important;
+  height: unset !important;
+}
+
+.publi-cv-file {
+  position: absolute;
+  bottom: 25px;
+  left: 60px;
+}
+
+/* --------- End Publication page Section ---------- */
+
+
+/* --------- Start OPD page Section ---------- */
+
+#opd-bannr .bannr-cont {
+  top: 6rem;
+}
+#opd-bannr .bannr-cont h2 span {
+  background-color: var(--blue);
+  color: #fff;
+  padding: 0 8px;
+}
+
+#opd-bannr .bannr-cont h2,
+#cancer-prog-bnnr .bannr-cont h2 {
+  font-size: 2vw;
+  margin-bottom: 2rem;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+#opd-bannr .bannr-cont h3 span {
+  color: var(--orange);
+}
+
+#opd-bannr .bannr-cont h3 {
+  font-size: 1.8rem;
+}
+
+/* #opd-sec h2 {
+  width: 20% !important;
+  margin-bottom: 2rem !important;
+} */
+
+.opd-clinic-sec {
+  padding: 2rem 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url(../img/bg/opd-clinic-bg.png);
+}
+
+.clinic-cont h2 {
+  font-size: 2vw;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--blue);
+}
+
+.clinic-cont p {
+  font-size: 15px;
+  color: #434343;
+  margin-top: 1.5rem !important;
+}
+
+.opd-treatment {
+  padding: 2rem 0;
+}
+
+.opd-treat-img {
+  width: 85%;
+  float: right;
+}
+
+.opd-list {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 16px 15px;
+  background: #FFF4E2 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 2px #00000029;
+}
+
+.opd-list-add {
+  width: 70%;
+}
+
+.opd-list-add h4 {
+  font-size: 16px;
+  color: var(--blue);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.opd-list-add h6 {
+  font-size: 15px;
+  color: var(--orange);
+}
+
+.opd-list-add h6 strong {
+  font-size: 16px;
+  color: #434343;
+}
+
+.opd-list-shr {
+  width: 30%;
+}
+
+.opd-list-shr ul {
+  justify-content: space-between;
+  display: inline-flex;
+  width: 100%;
+}
+
+.opd-list-shr ul li {
+  font-size: 15px;
+  display: inline-flex;
+}
+
+.opd-list-shr ul li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+#opd-sec ul li .opd-list {
+  margin-bottom: 15px;
+}
+
+/* --------- End OPD page Section ---------- */
+
+
+
+
+
+
+/* --------- Start Thank You page Section ---------- */
+
+#thankYou .modal-dialog {
+  margin-top: 15rem;
+  max-width: 700px;
+}
+
+#thankYou .modal-body {
+  padding: unset;
+  position: relative;
+}
+
+#thankYou .modal-footer {
+  position: absolute;
+  bottom: 10px;
+}
+
+#thankYou .modal-footer p {
+  font-size: 15px;
+  color: #343434;
+  text-align: center;
+  padding: 0 55px;
+}
+
+#thankYou .modal-content {
+  border: unset;
+}
+
+#thankYou .h-bannr-btn {
+  margin-top: 1.8rem;
+}
+
+/* --------- End Thank You page Section ---------- */
+
+
+
+
+/* --------- Start Robotic Surgery page Section ---------- */
+
+#robo-surgery-bnnr h2 {
+  margin-bottom: 15px;
+}
+
+#robo-surgery-bnnr h2 span,
+#vats-bannr h2 span {
+  font-size: 30px;
+  border-radius: 6px;
+  color: #fff;
+  padding: 0 8px;
+  background-color: var(--blue);
+  line-height: 45px;
+}
+
+#robo-surgery-bnnr .bannr-cont p {
+  color: #3D3D3D;
+  font-size: 15px;
+  width: 38vw;
+}
+
+#robo-surgery-bnnr .bannr-cont h3 {
+  font-size: 1.4vw;
+  color: #272626;
+  margin-bottom: 1.5rem;
+  font-weight: unset;
+}
+
+#robo-surgery-bnnr .bannr-cont h3 span {
+  display: block;
+  font-size: 1.7vw;
+  line-height: 50px;
+  font-weight: 600;
+}
+
+#robotic-surgery .Thoracic_Oncol_head {
+  position: relative;
+  margin-bottom: 2rem;
+}
+/* 
+#robotic-surgery .Thoracic_Oncol_head h2 {
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+} */
+
+.robo-surgery {
+  clip-path: polygon(0 0, 90% 0, 73% 100%, 0 100%);
+  padding: 15px 15px;
+  background-color: #F3F3F3;
+}
+
+.robo-surgery h3 {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--blue);
+}
+
+.robo-surgery p {
+  color: #3D3D3D;
+  font-size: 15px;
+  padding-right: 20rem;
+  padding-top: 15px;
+}
+
+.robo-vision-cart {
+  clip-path: unset !important;
+}
+
+.robo-work {
+  padding: 30px 20px;
+  clip-path: unset !important;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: unset;
+  background-image: url(../img/bg/robotic-work-bg.png);
+}
+
+.robo-work p {
+  padding: unset !important;
+}
+
+.robo-work-cont {
+  padding-top: 3rem !important;
+}
+
+.robo-work-cont h3 {
+  font-weight: 600;
+  margin-bottom: 1rem !important;
+}
+
+.surg-console {
+  position: relative;
+}
+
+.surg-console-mobi {
+  display: none;
+}
+
+.surg-cont-1 h3,
+.surg-cont-2 h3,
+.robo-advac-surg h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--blue);
+  margin-bottom: 0.6rem;
+}
+
+.surg-cont-1 p,
+.surg-cont-2 p {
+  font-size: 15px;
+  color: #3D3D3D;
+  line-height: 30px;
+}
+
+.surg-cont-1 {
+  position: absolute;
+  top: 6rem;
+  left: 5rem;
+  width: 45vw;
+}
+
+.surg-cont-2 {
+  position: absolute;
+  bottom: 8rem;
+  right: 6rem;
+  width: 45vw;
+}
+
+.robo-advac-surg ul li {
+  position: relative;
+  padding-left: 20px;
+  margin: 5px 0;
+  font-size: 15px;
+  color: #272626;
+}
+
+.robo-advac-surg ul li::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  color: #272626;
+  font-size: 18px;
+  top: 0px;
+}
+
+.robo-advac-surg p {
+  font-size: 17px;
+  color: #272626;
+  margin-bottom: 0.8rem !important;
+}
+
+#robo-tect-advac {
+  padding: 10px 15px;
+  background-color: #F8F8F8;
+}
+
+.robo-advac-surg {
+  margin-top: 2rem;
+}
+#robotic-surgery .Thoracic_Oncol_head h2::before,
+#video-sec .Thoracic_Oncol_head h2::before,
+#opd-sec .Thoracic_Oncol_head h2::before{
+  content: "";
+  position: absolute;
+  top: 42px;
+  background-color: var(--blue);
+  width: 8%;
+  height: 1.5px;
+  left: 0px;
+}
+
+
+
+/* .rob-surgery {
+  font-style: italic;
+} */
+
+/* --------- End Robotic Surgery page Section ---------- */
+
+
+
+
+
+/* --------- Start Cancer Program page Section ---------- */
+
+#cancer-prog-bnnr .bannr-cont {
+  top: 5rem;
+}
+
+#cancer-prog-bnnr h2 span {
+  color: #fff;
+  padding: 0 8px;
+  border-radius: 3px;
+  background-color: var(--orange);
+}
+
+#cancer-prog-bnnr h2 {
+  color: #000;
+}
+
+#cancer-prog-bnnr .bannr-cont h3 {
+  color: #000;
+}
+
+#cancer-prog-bnnr h3 span {
+  color: var(--orange);
+}
+
+#cancer-prog-bnnr .bannr-cont p {
+  border-left: 4px solid;
+  padding-left: 8px;
+  border-color: var(--orange);
+}
+
+.cancer-we-off {
+  padding: 15px 15px;
+  background-color: hsla(0, 0%, 97%, 1);
+  margin: 25px auto;
+}
+
+.cancer-we-off h3 {
+  font-size: 22px;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.cancer-we-off ul li {
+  font-size: 15px;
+  margin: 5px 0;
+  color: hsla(0, 0%, 24%, 1);
+}
+
+.cancer-border {
+  border-left: 2px solid #4343436b;
+}
+
+
+
+/* --------- End Cancer Program page Section ---------- */
+
+
+
+
+/* -- Start Thoracic Oncology (Cancer) Program page Section -- */
+
+#thoracic-cancer {
+  margin: 2rem auto;
+  padding: 2rem 2rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url(../img/bg/thoracic-cancer-prog-bg.webp);
+}
+
+.thoracic-cancer-cont h2 {
+  color: var(--orange);
+  font-size: 30px;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid;
+  border-color: var(--orange);
+  margin-right: 9rem;
+}
+
+.thoracic-cancer-cont .h-bannr-btn {
+  margin-top: 2rem;
+}
+
+.thoracic-cancer-cont p {
+  font-size: 15px;
+  color: #3D3D3D;
+}
+
+/* -- End Thoracic Oncology (Cancer) Program page Section -- */
+
+
+
+
+/* -- Start Contact Us page Section -- */
+
+#contact-us-bannr h2 {
+  font-size: 2vw;
+  font-weight: 600;
+  line-height: 45px;
+  margin-bottom: 1.5rem;
+}
+
+#contact-us-bannr h2 span {
+  color: var(--orange);
+}
+
+#contact-us-bannr .bannr-cont {
+  top: 5rem;
+  width: 36vw;
+}
+
+#contact-us-bannr .bannr-cont p {
+  color: #434343;
+  font-size: 15px;
+  width: 28vw;
+}
+
+/* .contact-form{
+  margin: 2rem 0;
+}
+.cont-form {
+  border-radius: 5px;
+  padding: 1.5rem 2rem;
+  background-color: var(--blue);
+}
+
+
+.cont-form-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+
+.form-head h4 {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 0.6rem;
+}
+
+.cont-form-head p {
+  font-size: 14px;
+  color: #ffffffcf;
+}
+
+.contact-form {
+  background-color: #006d8d;
+  padding: 20px;
+  padding-right: unset;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.contact-form h2 {
+  margin-top: 0;
+}
+
+.contact-form p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  background-color: white;
+  color: #434343 !important;
+  font-size: 15px;
+}
+
+.contact-form button {
+  background-color: #ff8c00;
+  color: white;
+  cursor: pointer;
+}
+
+.contact-form-sec {
+  margin: 2rem 0;
+}
+
+.cont-form-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cont-form-item {
+  width: 50%;
+}
+
+#form-sub {
+  width: 100%;
+}
+
+.contact-form .h-bannr-btn {
+  text-align: center;
+}
+
+.contact-form .h-bannr-btn .btn {
+  padding: 0 0 0 30px !important;
+  color: var(--blue);
+  background-color: #ffffff !important;
+}
+
+.contact-form .h-bannr-btn span {
+  margin-left: 30px;
+}
+
+#cont-address {
+  padding: 1rem 0;
+  margin-top: 2rem;
+  background: #FFF4E2 0% 0% no-repeat padding-box;
+  box-shadow: 4px 3px 6px #00000029;
+}
+
+#cont-address ul {
+  display: flex;
+}
+
+#cont-address ul li {
+  padding: 0;
+}
+
+.location-icon {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
+.cont-location {
+  text-align: center;
+}
+
+.cont-location h4 {
+  font-size: 20px;
+  line-height: 35px;
+  color: var(--orange);
+}
+
+.cont-location p {
+  font-size: 14px;
+  padding: 0 2rem;
+  color: #434343;
+}
+
+.contact-email-b {
+  border-left: 2px solid;
+  border-right: 2px solid;
+  border-color: #f6811b8f;
+}
+
+
+/* -- End Contact Us page Section -- */
+
+
+/* Start Testimonial Banner Section */
+
+
+
+.testimonial-bannr p {
+  border-left: 3px solid;
+  border-color: var(--blue);
+  padding-left: 5px;
+}
+
+.testimonial-bannr .bannr-cont {
+  top: 5.5rem;
+  width: 28vw !important;
+}
+
+/* End Testimonial Banner Section */
+
+
+/*********start covid section***************/
+
+.covid-banner {
+  position: relative;
+
+}
+
+.covid-bann-content {
+  width: 34vw;
+}
+
+
+.covid-bann-content {
+  position: absolute;
+  top: 5rem;
+  left: 7rem;
+}
+
+.covid-bann-content h1 {
+  font-size: 35px;
+  font-weight: 600;
+  padding-right: 1%;
+  margin-bottom: 25px;
+  line-height: 50px;
+  color: #000;
+}
+
+.covid-bann-content span {
+  color: var(--orange);
+}
+
+.covid-bann-content p {
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+
+.lung-caner-sec {
+  padding: 3% 0;
+}
+
+.lung-heading h2 {
+  color: var(--blue);
+  margin-bottom: 35px;
+  font-weight: 600;
+  font-size: 30px;
+  position: relative;
+}
+
+
+.lung-heading h2::after {
+  content: "";
+  position: absolute;
+  top: 45px;
+  background-color: var(--blue);
+  width: 23%;
+  height: 2px;
+  left: 0px;
+
+}
+
+.lung-heading-content {
+  padding: 4% 0;
+  background-color: #FFF4E2;
+}
+
+
+.lung-heading-content P {
+  font-size: 15PX;
+  padding: 0px 3%;
+  color: #434343;
+}
+
+
+.second-para-content p {
+  font-size: 15px;
+  padding-bottom: 2PX;
+  color: #434343;
+}
+
+
+.protection-sec h3 {
+  color: var(--blue);
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 22px;
+  padding-top: 22px;
+}
+
+.protection-sec p {
+  font-size: 15px;
+  color: #434343;
+  padding-bottom: 22px;
+}
+
+.prot {
+  padding: 3% 0;
+}
+
+.protecrt img {
+  width: 75%;
+  padding-bottom: 30px;
+}
+
+.prot p {
+  font-size: 15px;
+  color: #3D3D3D;
+}
+
+.vaccination-sec {
+  background-color: #FFF4E2;
+  padding: 20px 20px;
+}
+
+
+.vaccination-sec h3 {
+  color: var(--blue);
+  padding-bottom: 10px;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+
+.vaccination-sec p {
+  font-size: 15px;
+  color: #3D3D3D;
+}
+
+
+.vaccination-heading h3 {
+  color: var(--blue);
+  padding-top: 20px;
+  font-weight: 600;
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+
+.vaccination-heading p {
+  font-size: 15px;
+  color: #3D3D3D;
+
+}
+
+
+.treatment-sec h3 {
+  color: var(--blue);
+  padding-top: 20px;
+  font-weight: 600;
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+
+
+.treatment-sec p {
+  font-size: 15px;
+  color: #3D3D3D;
+  padding-bottom: 22px;
+}
+
+
+.form-bg-n {
+  background-color: #13729B;
+  padding: 22px 17px;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+}
+
+
+#topup-icon img {
+  width: 10px;
+}
+
+#topup-icon {
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+#topup-icon-1 {
+  position: relative;
+}
+
+#topup-icon img {
+  position: absolute;
+  width: 10px;
+  right: 10px;
+  top: 20px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+#topup-icon-1 img {
+  position: absolute;
+  width: 12px;
+  right: 30px;
+  top: 32px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.cont-form-head h4 {
+  margin-bottom: 0.5rem !important;
+}
+
+.cont-form-head {
+  text-align: center;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 1rem !important;
+}
+
+.sub-heading-n {
+  color: white;
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.form-bg-n p {
+  letter-spacing: -1.08px;
+  line-height: 44px;
+  margin-bottom: 22px;
+  color: white;
+}
+
+.form-bg-n label {
+  color: white;
+  font-size: 15px;
+}
+
+#send-btn .btn {
+  color: #13729B;
+  padding: 0 0 0 30px !important;
+  background-color: #ffffff !important;
+  font-weight: 600;
+}
+
+#send-btn span {
+  margin-left: 32px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#send-btn {
+  margin-top: 2rem;
+}
+
+.covid-form-group select {
+  margin-left: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.consultation-form input {
+  min-height: 35px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.consultation-form input::placeholder{
+  color: #B2B2B2;
+}
+
+.covid-form-group select {
+  margin-left: 0px !important;
+}
+
+.covid-form-group select {
+  font-size: 14px !important;
+  color: #B2B2B2;
+}
+
+.covid-form-group textarea {
+  font-size: 14px;
+  color: #B2B2B2;
+}
+
+
+
+.belal-back-content {
+  text-align: center;
+  margin-top: 50px;
+  background-color: #13729B;
+  /* width: 327px; */
+  padding: 30px;
+}
+
+.belal-dr img {
+  width: 245px;
+  padding-bottom: 10px;
+}
+
+.belal-content h5 {
+  font-size: 22px;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.belal-content p {
+  color: black;
+  font-size: 15px;
+  color: white;
+  padding: 4px 0px;
+
+}
+
+
+
+
+#app-btn {
+  margin-top: 1rem;
+}
+
+
+#app-btn .btn {
+  align-items: center;
+  padding: 10px 20px !important;
+  background-color: white !important;
+  color: #13729B !important;
+  font-weight: 600;
+}
+
+
+/*********End covid section***************/
+
+
+
+/* Start Testimonial List Section */
+
+
+.testimonial-banner {
+  position: relative;
+
+}
+
+.testi-cont {
+  position: absolute;
+  top: 5rem;
+  left: 7rem;
+  width: 22%;
+}
+
+
+.testi-cont h1 {
+  font-size: 1.6vw;
+  color: #000000;
+  font-weight: 600;
+  line-height: 55px;
+  margin-bottom: 1.5rem;
+}
+
+.testi-cont span {
+  color: var(--orange);
+  font-size: 1.5vw;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+#unveilling .testi-cont p {
+  color: #000000;
+  font-weight: 600;
+  font-size: 15px;
+  width: 67%;
+  height: 50px;
+  line-height: 31px;
+  padding-left: 7px;
+  border-left: 3px solid;
+  border-color: var(--blue);
+}
+
+.testimonial-sec {
+  padding: 3% 0;
+}
+
+.test-head {
+  padding-bottom: 40px;
+}
+
+.test-head h2 {
+  color: var(--blue);
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 30px;
+  position: relative;
+}
+
+.test-head h2::after {
+  content: "";
+  position: absolute;
+  top: 42px;
+  background-color: var(--blue);
+  width: 13%;
+  height: 2px;
+  left: 0px;
+}
+
+.back-cont {
+  background-color: #FCF9F3;
+  display: flex;
+  text-align: start;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  padding: 15px 15px;
+  box-shadow: 1px 2px 5px #00000029;
+  opacity: 1;
+}
+
+.content p {
+  font-size: 15px;
+  color: #4E4E4E;
+}
+
+.content span {
+  color: #3A00FF;
+}
+
+.gril-nurse img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-left: 26px;
+  border: 6px solid #F6AD33;
+}
+
+.gril-nurse {
+  position: relative;
+  z-index: 2;
+}
+
+.saphal-content {
+  padding-top: 69px;
+  background-color: #FFDBA5;
+  width: 175px;
+  height: 235px;
+  position: absolute;
+  top: 60px;
+  left: 28px;
+}
+
+.saphal {
+  padding-top: 20px
+}
+
+.saphal h3 {
+  color: var(--blue);
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.saphal p {
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.gold-start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.gold-start img {
+  width: 19px;
+  margin: 0 1px;
+}
+
+.view-btn {
+  margin-top: 1.0rem !important;
+}
+
+.view-btn span {
+  width: 28px;
+  height: 30px;
+}
+
+.view-btn span img {
+  width: 15px;
+  display: unset;
+}
+
+.back-cont {
+  width: 95%;
+}
+
+.explore-btn a {
+  font-size: 15px;
+  color: #434343;
+}
+
+.explore-btn img {
+  width: 15px;
+
+}
+
+
+
+/* End Testimonial List Section */
+
+
+
+
+/* Start Testimonial Details Section */
+
+.testimonial-detail-banner {
+  margin-top: 11rem;
+}
+
+.testi-cont-back {
+  background-color: #FAF7F4;
+  padding: 30px 20px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url(../img/bg/testimonial-detail-banner-bg.png);
+}
+
+.testi-banner-content h1 {
+  color: var(--blue);
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.testi-banner-content span {
+  font-size: 22px;
+}
+
+.testi-banner-content p {
+  font-size: 15px;
+  color: #4E4E4E;
+}
+
+.saphal-content-2 {
+  padding-top: 69px;
+  text-align: center;
+  background-color: #FFDBA5;
+  width: 250px;
+  height: 235px;
+  position: absolute;
+  top: 130px;
+  left: 85px;
+}
+
+.related-sec {
+  padding: 20px 0;
+}
+
+.saphal-2 h4 {
+  color: #434343;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.saphal-2 p {
+  color: #2D2B2B;
+}
+
+/* .gold-string {
+
+  width: 19px;
+  margin-left: 79px;
+  margin-top: 20px;
+} */
+
+.grif-nures img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-left: 26px;
+  border: 6px solid #F6AD33;
+  margin-top: 22px;
+}
+
+.related-head {
+  padding-bottom: 22px;
+}
+
+.related-head h3 {
+  color: var(--blue);
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.testi-details-card {
+  position: relative;
+  text-align: center;
+}
+
+
+/* End Testimonial Details Page */
+
+
+/* Start introduction And Experience page */
+
+
+
+
+.thoracic-sec {
+  padding: 2% 0;
+  position: relative;
+}
+
+
+.surgeon-content h2 {
+  font-size: 2vw;
+  font-weight: 600;
+  color: var(--orange);
+  margin-bottom: 2rem;
+}
+
+.surgeon-content h3 {
+  color: var(--blue);
+  font: normal normal bold 25px / 30px Poppins-Regular;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+  opacity: 1;
+  position: relative;
+}
+
+.surgeon-content h3::after {
+  content: "";
+  position: absolute;
+  top: 33px;
+  background-color: var(--blue);
+  width: 48%;
+  height: 2px;
+  left: 0px;
+}
+
+.surgeon-para p {
+  font: normal normal normal 15px / 22px Poppins-Regular;
+  letter-spacing: 0px;
+  color: #3D3D3D;
+  padding-top: 20px;
+}
+
+/* .surgeon-para span{
+  color: #007bff;
+} */
+
+.shape-stethoscope {
+  position: absolute;
+  top: 1rem;
+  right: 11rem;
+  width: 150px;
+}
+
+.expertise-sec {
+  background-image: url('../img/bg/expertise.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 0;
+}
+
+.expertise-content h2 {
+  margin-bottom: 1rem;
+  color: var(--blue);
+  font: normal normal bold 30px / 40px Poppins-Regular;
+  position: relative;
+}
+
+.expertise-content h2::after {
+  content: "";
+  position: absolute;
+  top: 42px;
+  background-color: var(--blue);
+  width: 31%;
+  height: 1px;
+  left: 0px;
+}
+
+.expertise-list {
+  padding-top: 12px !important;
+}
+
+.expertise-list ul li {
+  font-size: 16px;
+  color: #5A5A5A;
+  font-weight: 600;
+  padding-bottom: 35px;
+}
+
+.expertise-list ul li span {
+  width: 20px;
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.language-eng h3 {
+  font-size: 15px;
+  color: #000000;
+  font-weight: 600;
+}
+
+.leauged span {
+  font-size: 18px;
+  color: var(--blue);
+  font-weight: 600;
+  padding-right: 45px;
+}
+
+.leauged-2 span {
+  font-size: 18px;
+  color: var(--blue);
+  font-weight: 600;
+  padding-right: 66px;
+}
+
+.education-sec {
+  padding: 3% 0;
+}
+
+.edu-cont {
+  padding-bottom: 30px;
+}
+
+.edu-cont h2 {
+  color: var(--blue);
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+}
+
+.edu-cont h2::after {
+  content: "";
+  position: absolute;
+  top: 42px;
+  background-color: var(--blue);
+  width: 27%;
+  height: 1px;
+  left: 0px;
+}
+
+.certificate {
+  position: relative;
+}
+
+.certificate img {
+  width: 200px;
+}
+
+
+.edu-nav-list {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 5px 10px #00000029;
+  border-radius: 25px;
+}
+.edu-nav-icon {
+  width: 15%;
+  background-color: #13729b1c;
+  padding: 15px;
+  text-align: center;
+  border-radius: 25px 0px 0px 25px;
+}
+.medical-degree {
+  width: 85%;
+  padding: 10px;
+}
+/* .edu-nav-icon img{
+  width: 50px;
+} */
+
+.medical-degree p {
+  font-size: 15px;
+  line-height: 25px;
+  color: #434343;
+}
+
+/* .star-moon img {
+  width: 50px;
+  height: 50px;
+} */
+
+/* .star-moon {
+  width: 20%;
+  text-align: center;
+} */
+
+.education-next {
+  background-color: #FFF9EF;
+  padding: 4% 0;
+}
+
+.edu-cont-next h2 {
+  color: var(--blue);
+  font: normal normal bold 30px / 30px Poppins-Regular;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+  opacity: 1;
+  position: relative;
+  font-weight: 700;
+}
+
+
+.edu-cont-next h2::after {
+  content: "";
+  position: absolute;
+  top: 42px;
+  background-color: var(--blue);
+  width: 27%;
+  height: 1px;
+  left: 0px;
+}
+
+
+.certificate-mob {
+  display: none;
+}
+
+.certificate-desk {
+  display: block;
+}
+
+.experience-sec {
+  border: 1px solid;
+  border-color: hsla(198, 78%, 34%, 1);
+  border-radius: 3px;
+  width: 480px;
+  padding: 5px 10px;
+}
+
+
+/* End introduction And Experience page */
+
+
+/* Start Vats Surgery page */
+
+.vats-surgery-bnnr .bannr-cont h3 {
+  margin-bottom: 1rem !important;
+  font-weight: 600 !important;
+}
+
+.vats-surgery-bnnr .bannr-cont h2 {
+  margin-bottom: 1rem;
+}
+
+
+.vats-surgery-para {
+  padding: 2% 0;
+}
+
+.vat-head {
+  padding-bottom: 22px;
+}
+
+.vat-head h2 {
+  color: var(--blue);
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 30px;
+  position: relative;
+}
+
+.vat-head h2::after {
+  content: "";
+  position: absolute;
+  top: 48px;
+  background-color: var(--blue);
+  width: 23%;
+  height: 2px;
+  left: 0px;
+}
+
+#vats-robotic-cont h3 {
+  color: var(--blue);
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.thoracic-surgery {
+  padding: 15px 15px;
+  background-color: #FFF4E2;
+  margin-top: 25px;
+}
+
+#thoracic-surgery-2 {
+  background-color: unset
+}
+
+#vats-robotic-cont .thoracic-surgery h3 {
+  font-size: 20px;
+  color: var(--blue);
+}
+
+.thoracic-surgery p {
+  color: #3D3D3D;
+  font-size: 15px;
+  padding-top: 15px;
+}
+
+.niddle-n {
+  width: 80%;
+  margin: 3% 0;
+}
+
+/* .vats-advac-surg {
+  margin-top: 2rem;
+} */
+
+.vats-advac-surg h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--blue);
+  margin-bottom: 0.6rem;
+}
+
+.vats-advac-surg ul li {
+  position: relative;
+  padding-left: 20px;
+  margin: 15px 0;
+  font-size: 15px;
+  color: #3D3D3D;
+}
+
+.vats-advac-surg ul li::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  color: #3D3D3D;
+  font-size: 18px;
+  top: 0px;
+}
+
+.benefits-vats-advac-surg {
+  background-image: url('../img/bg/procedures.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px;
+  margin-bottom: 2rem;
+}
+
+/* .vats-advac-surgging {
+  margin-top: 2rem;
+} */
+
+.vats-advac-surgging h3 {
+  color: var(--blue);
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.vats-advac-surgging h4 {
+  font-size: 16px;
+  color: #000000;
+  line-height: 27px;
+  font-weight: 600;
+}
+
+.vats-advac-surgging ul li {
+  position: relative;
+  padding-left: 20px;
+  margin: 15px 0;
+  font-size: 15px;
+  color: #3D3D3D;
+}
+
+.vats-advac-surgging ul li::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  color: #3D3D3D;
+  font-size: 18px;
+  top: 0px;
+}
+
+/* .risks-vats {
+  padding: 5% 0;
+} */
+
+.risks-vats h3 {
+  color: var(--blue);
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.risks-vats h4 {
+  font-size: 15px;
+  color: #000000;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.risks-vats ul li {
+  position: relative;
+  padding-left: 25px;
+  margin: 15px 0;
+  font-size: 15px;
+  color: #3D3D3D;
+}
+
+.risks-vats ul li::before {
+  content: ">";
+  position: absolute;
+  left: 11px;
+  color: #3D3D3D;
+  font-size: 18px;
+  top: 0px;
+}
+
+.risks-vats p {
+  font-size: 15px !important;
+  color: #3D3D3D;
+  padding-top: 15px;
+  line-height: 26px;
+}
+
+.risks-vats span {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+/*----- End Vats Surgery page ------*/
+
+
+
+
+/*-------- Start Lung Cancer Page --------*/
+
+/* #lung-cancer-bnnr .bannr-cont {
+  top: 5rem;
+  width: 40vw;
+} */
+
+/* #lung-cancer-bnnr .bannr-cont p {
+  width: 25vw;
+} */
+/* 
+#lung-cancer-bnnr .bannr-cont h2 {
+  font-size: 31px;
+  margin-bottom: 2rem;
+  line-height: 45px;
+  color: var(--blue);
+  font-weight: 600;
+} */
+
+/* #lung-cancer-bnnr .bannr-cont h2 span {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--blue);
+} */
+
+#lung-video-sec video {
+  border-radius: 5px;
+}
+
+#lung-video-sec .card {
+  border-radius: 5px;
+}
+
+.lung-cancer-tab,
+.lung-nodules-tab,
+.myasthenia-gravis-tab {
+  padding: 2rem 0;
+}
+
+#lungCancerTab {
+  width: 100%;
+  margin-bottom: 1.5rem !important;
+  border: 0.699999988079071px solid #707070ab;
+}
+
+#lungCancerTab li {
+  align-items: center;
+  width: 25%;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.myasthenia-gravis-tab .nav-item {
+  width: 20% !important;
+}
+
+#lungCancerTab li .nav-link {
+  width: -webkit-fill-available;
+  color: #343434;
+  font-size: 17px;
+  padding: 20px !important;
+  margin-bottom: unset;
+  border: 0.699999988079071px solid #707070ab;
+  border-top-left-radius: unset;
+  border-top-right-radius: unset;
+  height: auto;
+  width: -moz-available;
+  isolation: unset;
+  min-height: 118px;
+}
+
+#lungCancerTab .nav-item.show .nav-link,
+#lungCancerTab .nav-link.active {
+  color: #fff !important;
+  font-weight: 600;
+  background-color: var(--blue) !important;
+}
+
+.lung-tab-sec1 {
+  background: #fff1db;
+  padding: 2rem 1rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-image: url(../img/bg/lung-cancer-bg-1.png); */
+}
+
+.lung-tab-cont-2 .lung-tab-sec1 {
+  /* background-image: url(../img/bg/lung-cancer-bg-2.png); */
+}
+
+.lung-tab-cont-3 .lung-tab-sec1 {
+  /* background-image: url(../img/bg/lung-cancer-bg-3.png); */
+}
+
+.lung-tab-cont-4 .lung-tab-sec1 {
+  /* background-image: url(../img/bg/lung-cancer-bg-4.png); */
+}
+
+.lung-tab-cont #lungTab1 {
+  /* background-image: url(../img/bg/Types-Lung-cancer.png) !important; */
+}
+
+/* .lung-sec-cont-1 {
+  width: 50vw;
+} */
+.myasthenia-gravis-tab .lung-sec-cont-1, #mediast-tumaor .lung-sec-cont-1 {
+  width: unset;
+}
+
+.lung-sec-cont-2 {
+  margin: 2rem 0;
+  width: 100% !important;
+}
+
+.lung-sec-cont-3 {
+  width: 70vw !important;
+}
+
+.lung-sec-cont-1 h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--orange);
+  position: relative;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.lung-sec-cont-1 h4 {
+  font-size: 18px;
+  color: var(--blue);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.lung-sec-cont-1 p {
+  font-size: 15px;
+  color: #3D3D3D;
+  margin-bottom: 1.5rem !important;
+}
+
+.lung-sec-cont-1 h3::before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--orange);
+}
+
+.lung-sec-cont-3 .cancer-list-head {
+  font-size: 16px;
+  color: #343434;
+  font-weight: 600;
+  line-height: 35px !important;
+}
+
+.cancer-list-head ul li,
+.lung-sec-cont-4 ul li,
+.lung-sec-cont-5 ul li {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 23px;
+}
+
+.lung-sec-cont-4 {
+  margin: 2rem 0;
+  padding: 1rem;
+  width: 100% !important;
+  background-color: #F5F5F5;
+}
+
+.lung-sec-cont-4 p {
+  margin: 1rem 0 !important;
+}
+
+.lung-sec-cont-5 {
+  margin: 1rem 0;
+  width: 98% !important;
+}
+
+.lung-sec-cont-5 ul li {
+  margin: 1rem 0;
+}
+
+.lung-sec-cont-4 h5 {
+  font-size: 17px;
+}
+
+.lung-sec-cont-5 ul li h6 {
+  font-size: 16px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.lung-sec-cont-5 a {
+  color: hsla(254, 100%, 50%, 1);
+}
+
+#lung-video-sec {
+  margin-top: 0px;
+  margin-bottom: 2rem;
+}
+
+.lung-sec-cont-1 ul {
+  list-style: disc !important;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem !important;
+}
+
+.lung-sec-cont-1 li {
+  list-style: disc !important;
+  padding-left: 1rem;
+  padding-left: unset !important;
+  margin: 0.5rem 0;
+  font-size: 15px;
+}
+
+.lung-sec-cont-1 .lund-nod-list,
+.lung-sec-cont-1 .lund-nod-list li {
+  list-style: none !important;
+  padding-left: unset !important;
+  margin-bottom: unset !important;
+}
+
+.lung-sec-cont-1 h6 {
+  font-size: 17px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+#lungTab1 .lung-sec-cont-3 li {
+  padding-left: 1rem !important;
+}
+
+/* #lung-cancer-bnnr {
+  margin-top: 8.15rem;
+} */
+
+#chest-tumours li {
+  align-items: center;
+  width: 50%;
+  display: inline-flex;
+  justify-content: center;
+}
+
+#chest-tumours .nav-tabs {
+  width: 50%;
+  margin-bottom: 1.5rem !important;
+  border: 0.699999988079071px solid #707070ab;
+  /* margin: auto; */
+}
+
+#empyema-treat .nav-item {
+  align-items: center;
+  width: 33.33%;
+  display: inline-flex;
+  justify-content: center;
+}
+.myasth-grav-img, .myasth-grav-img-1, .myasth-grav-img-3{
+  text-align: center;
+}
+.myasth-grav-img img {
+  width: 30rem;
+}
+.myasth-grav-img-1 img{
+  width: 25vw;
+}
+.myasth-grav-img-3 img {
+  width: 20vw;
+}
+#myas-grav-img{
+  margin: 1rem 0;
+}
+.treated-bnn-mob{
+display: none;
+}
+
+
+
+
+
+/*---- End Lung Cancer Page -----*/
+
+
+/* ---- Start Robotic Thymectomy Page ----- */
+
+#robotic-thyme h2{
+  margin-bottom: 2rem;
+}
+#robotic-thyme h2::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  background-color: var(--orange);
+  width: 164px;
+  height: 1.5px;
+  left: 0px;
+}
+.robo-thymec, .robotic-thymectomy {
+  margin: 2rem 0;
+}
+.robo-thyme-cont h3,
+.vats-thyme-cont h3 {
+  color: #272626;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.robo-thyme-cont ul{
+  background-color: #FFF3E8;
+  padding: 8px 8px;
+  margin: 15px 0 !important;
+  list-style: disc !important;
+  padding-left: 25px;
+}
+.robo-thyme-cont ul li{
+  font-size: 15px;
+  font-weight: 600;
+  margin: 5px 0 !important;
+  list-style: disc !important;
+}
+.robo-thymec-post {
+  width: 65%;
+  float: right;
+}
+.vats-thymec {
+  background-color: #EAF4F9;
+  padding: 3rem 0;
+}
+.vats-thyme-cont h6{
+  font-size: 16px;
+  font-weight: 600;
+  color: #272626;
+  margin-bottom: 1rem;
+}
+.vats-thyme-cont p,
+.robotic-thymectomy p{
+  margin-top: 1.5rem !important;
+}
+.vats-thymec-post {
+  width: 90%;
+}
+.robotic-img-sec{
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+}
+.robotic-img-sec img{
+  border-radius: 80px 0px;
+}
+
+
+
+/* ---- End Robotic Thymectomy Page ----- */
+
+
+/* ----- Start Case Study Page ----- */
+
+.banner-area .web-img {
+  display: block;
+}
+.banner-area .mob-img {
+  display: none;
+}
+/* start case study card section */
+.card-sec {
+  margin: 30px 0;
+}
+.card-sec .card {
+  border: none;
+}
+.card-cont {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #FFC933;
+  border-bottom-style: dotted;
+}
+.card-cont h6 {
+  color: #F6811B;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+.card-cont p {
+  font-size: 13px !important;
+  font-weight: 600;
+}
+.belal-heading {
+  padding: 10px 0;
+}
+.belal-heading h5 {
+  color: #F6811B;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.belal-heading p {
+  font-size: 10px;
+  color: #434343;
+}
+.card-body p {
+  font-size: 15px;
+  color: #444040;
+}
+.read-more {
+  border: none;
+  background: none;
+  color: blue;
+  cursor: pointer;
+}
+
+.belal-heading p{
+  font-size: 13px !important;
+}
+/* Start Case study detail section */
+
+
+
+.case-study-detail {
+  margin-top: 11%;
+  margin-bottom: 2%;
+}
+.case-head h4 {
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+.case-detail {
+  background: #F8F8F8;
+  padding: 15px 15px;
+}
+.case-detail h5 {
+  color: #13729B;
+  font-weight: 600;
+  font-size: 18px;
+}
+.case-detail p {
+  font-size: 15px;
+  padding-top: 10px;
+}
+#case-details {
+  padding: 20px 20px;
+}
+#case-details h5 {
+  color: #13729B;
+  font-weight: 600;
+  font-size: 18px;
+}
+#case-details p {
+  font-size: 15px;
+  padding-top: 10px;
+}
+.case-img-Xray {
+  width: 70%;
+  margin: 20px auto;
+}
+.Implementation {
+  margin: 20px 0;
+  background: #F8F8F8;
+  padding: 15px 15px;
+}
+.Implementation h5 {
+  color: #13729B;
+  font-weight: 600;
+  font-size: 18px;
+}
+.Implementation p {
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+
+/* ----- End Case Study Page ----- */
+
+
+
+
+/* ------------ Read button ---------- */
+
+.add-read-more.show-less-content .second-section,
+.add-read-more.show-less-content .read-less {
+  display: none;
+}
+
+.add-read-more.show-more-content .read-more {
+  display: none;
+}
+
+.add-read-more .read-more,
+.add-read-more .read-less {
+  margin-left: 2px;
+  color: #3A00FF;
+  cursor: pointer;
+}
+
+.add-read-more {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ------------ Read button ---------- */
+
+/* --- Top Up Button --- */
+
+#topUpBtn {
+  display: none;
+  position: fixed;
+  bottom: 35px;
+  right: 24px;
+  z-index: 999;
+  border: none;
+  outline: none;
+  background-color: var(--orange);
+  cursor: pointer;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+}
+
+#topUpBtn::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  left: 13px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-size: 15px 19px;
+  background-image: url(../img/icons/back-to-top.png);
+}
+
+#topUpBtn:hover {
+  background-color: #13729bb3;
+}
+
+.best-surgeon .add-read-more {
+  width: 88%;
+}
+
+#award-bannr .bannr-cont,
+#achievement .bannr-cont,
+#robotic-thyme .bannr-cont {
+  top: 5rem;
+}
+
+#robo-surgery-bnnr .bannr-cont {
+  top: 7.5rem;
+}
+
+#vats-bannr .bannr-cont {
+  top: 6rem;
+}
+
+
+/* --- Top Up Button --- */
+
+
+/* ----- Start Floating Icons ----- */
+
+.float{
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  bottom: 85px;
+  right: 20px;
+  color: #FFF;
+  border-radius: 50px;
+  font-size: 38px;
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+}
+.phone-float {
+  position: fixed;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  bottom: 145px;
+  right: 25px;
+  color: #FFF;
+  border-radius: 50px;
+  font-size: 38px;
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  background-color: #ccdde4;
+}
+.my-float {
+  margin-top: 3px;
+}
+
+.whatsp-icon:hover a {
+  color: #fff !important;
+}
+
+/* ----- End Floating Icons ----- */
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+
+
+
+
+.home-bannr-slider .home-banner-mob,
+#award-bannr .home-banner-mob,
+#cancer-prog-bnnr .home-banner-mob,
+#chest-surgeon-bannr .home-banner-mob,
+#contact-us-bannr .home-banner-mob,
+#achievement .home-banner-mob,
+#opd-bannr .home-banner-mob,
+#robo-surgery-bnnr .home-banner-mob,
+#robotic-thyme .home-banner-mob,
+#vats-bannr .home-banner-mob,
+#publication-bnnr .home-banner-mob{
+  display: none;
+}

@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-weight: 100;
+    
+}
+body{
+    background-color: #302c6c;
+}
+
+
+.contact-us{
+    width: 400px;
+    margin: 100px auto;
+    padding: 55px;
+    position: relative;
+    background-color: #514bad;
+}
+.title h1{
+    /* letter-spacing: 1px; */
+    /* margin-bottom: 20px; */
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    text-shadow: 0px 0px;
+    opacity: 0.9;
+}
+.form .form-itmes{
+    width: 100%;
+}
+.form-items .input{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px 5px;
+    box-sizing: border-box;
+    border: 1px;
+    outline: 1px;
+    background-color: #514bad;
+    font-size: larger;
+    outline-color: white;
+    outline-style: solid;
+    border-color: white;
+    box-shadow: 1px 1px 1px 1px #fff;
+    opacity: 0.4;
+}
+.your-name input{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px 5px;
+    box-sizing: border-box;
+    background-color: #514bad;
+    font-size: larger;
+    border-color: white;
+    border: unset;
+    border-bottom: 1px solid #fff;
+    box-shadow: 0px 1px #fff;
+    opacity: 0.5;
+}
+::placeholder {
+    color: #fff;
+    opacity: 1.0; /* Firefox */
+  }
+.form-items .message.input{
+    height: 125px;
+    margin-bottom: 20px;
+    padding: 10px;
+    resize:none ;
+}
+.btn{
+    background: rgb(33 219 228);
+    text-align: center;
+    color: white;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: large;
+    outline: 1px;
+    border: 1px;
+    outline-style: solid;
+    outline-color: rgb(59, 177, 231);
+    text-shadow: 0px 1px;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+

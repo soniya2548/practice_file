@@ -1,0 +1,210 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    width: 65%;
+    margin: auto;
+    padding: 20px;
+    background-color: #141414;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(23, 106, 173);
+    align-items: center;
+
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    padding: 15px;
+    font-size: 60px;
+}
+
+header h2 {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.row {
+    display: flex;
+}
+
+.first-container {
+    width: 30%;
+    background-color: rgb(173, 212, 230);
+    position: relative;
+}
+
+.first {
+    text-align: left;
+    padding: 10px;
+}
+
+
+.address,
+.contact,
+.Email {
+    float: left;
+    padding: 1px;
+    margin: 5px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 12px;
+}
+
+.second-container {
+    width: 70%;
+    background-color: white;
+
+}
+
+.main-profile {
+    margin: 20px;
+}
+
+.profile {
+    color: rgb(23, 106, 173);
+    padding: 1px;
+    font-size: 23px;
+    margin-top: 15px;
+}
+
+
+p {
+    margin: 2px;
+    padding: 0px;
+    font-size: 20px;
+}
+
+.education {
+    color: rgb(23, 106, 173);
+    /* margin: 20px; */
+    padding: 1px;
+    font-size: 23px;
+}
+
+.one-row {
+    display: flex;
+}
+
+.one-col {
+    width: 200px;
+    margin-top: 15px;
+    padding: 1px;
+    font-size: 14px;
+}
+
+.second-col {
+    width: 448px;
+    margin-top: 15px;
+    padding: 1px;
+    font-size: 14px;
+}
+
+.second-row {
+    display: flex;
+}
+
+.third-row {
+    display: flex;
+}
+
+.forth-row ul,
+.fifth-row ul {
+    margin-left: 250px;
+}
+
+/* .third-col {
+    width: 200px;
+    margin-top: 15px;
+    padding: 1px;
+    font-size: 14px;
+}
+.forth-col {
+    width: 448px;
+    margin-top: 15px;
+    padding: 1px;
+    font-size: 14px; 
+}*/
+/* .forth-col {
+    width: 448px;
+    height: 100px;
+    margin: 20px;
+    padding: 1px;
+    font-size: 15px;
+}
+
+.second-col h3,
+.forth-col h3 {
+    color: rgb(23, 106, 173);
+}
+
+.experience {
+    color: rgb(23, 106, 173);
+    margin: 20px;
+    padding: 1px;
+    font-size: 23px;
+}
+
+.third-row {
+    display: flex;
+}
+
+.fifth-col {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 1px;
+    font-size: 14px;
+}
+
+.sixth-col {
+    width: 448px;
+    height: 100px;
+    margin: 20px;
+    padding: 1px;
+    font-size: 15px;
+}
+
+.seventh-col {
+    width: 448px;
+   a
+    margin: 20px;
+    padding: 1px;
+    font-size: 15px;
+}
+
+.professional-skills {
+    color: rgb(23, 106, 173);
+    margin: 20px;
+    padding: 1px;
+    font-size: 23px;
+}
+
+.professional-skills {
+    color: rgb(23, 106, 173);
+    margin: 20px;
+    padding: 1px;
+    font-size: 23px;
+}
+
+.personal-skills {
+    color: rgb(23, 106, 173);
+    margin: 20px;
+    padding: 1px;
+    font-size: 23px;
+}
+
+.forth-row ul,
+.fifth-row ul {
+    margin-left: 250px;
+} */

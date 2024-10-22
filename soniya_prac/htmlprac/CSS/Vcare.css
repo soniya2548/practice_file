@@ -1,0 +1,872 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px 1px rgb(0 0 0 / 10%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.main-header {
+    display: flex
+}
+
+.left-header {
+    width: 40%;
+}
+
+.logo img {
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.right-header {
+    width: 60%;
+}
+
+.first {
+    display: flex;
+    margin-top: 22px;
+}
+
+p.first-para {
+    font-size: 13px;
+    margin-right: 7px;
+    font-weight: 500;
+    color: #423f3fe0;
+}
+
+.right-header .new {
+    background-color: #40B62D;
+    border: none;
+    font-size: 9px;
+    padding: 0px 6px 0px 5px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+
+select.list {
+    font-size: 12px;
+    border: none;
+    outline: none;
+    margin-left: 45px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    color: #423f3fe0;
+}
+
+.create .create-ABHA {
+    background-color: #fff;
+    color: #2871BA;
+    font-size: 13px;
+    font-weight: 400;
+    border-color: #2871BA;
+    margin-left: 30px;
+    border-radius: 5px;
+    padding: 4px 20px 6px 20px;
+    box-shadow: 0px 0px 0px 1px rgb(62 165 233 / 28%);
+}
+
+.health .health-locker {
+    background-color: #40B62D;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    border-color: #40B62D;
+    margin-left: 30px;
+    padding: 4px 20px 7px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px 1px rgb(49 51 49 / 18%);
+}
+
+.first-banner {
+    margin-top: 0px;
+    /* display: flex; */
+    background-size: cover;
+    background-image: url(../app-hand/banner-bg2\ two.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 100px;
+    padding-top: 55px;
+}
+
+.first-banner-content {
+    width: 766px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.first-banner-img img {
+    width: 400px;
+    margin-top: 65px;
+    margin-left: 135px;
+}
+
+.bg-image img {
+    width: 100%;
+}
+
+.first-box {
+    width: 100%;
+    /* height: 50vh; */
+    background-repeat: no-repeat;
+    background-image: url(../app-hand/slider-bg-img1.png);
+}
+
+p.first-para-content {
+    font-size: 60px;
+    line-height: 65px;
+    margin-bottom: 25px;
+    padding-top: 30px;
+}
+
+p.second-para-content {
+    color: #1976D2;
+    font-size: 20px;
+}
+
+.button-icon {
+    display: flex;
+    margin-top: 35px;
+}
+
+.create-button .first-btn {
+    background-color: #40B62D;
+    border-color: #40B62D;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 12px 30px 12px 30px;
+    box-shadow: 0px 2px 3px 1px rgb(49 51 49 / 14%);
+}
+
+.vdo-icon {
+    width: 7.3%;
+    margin-left: 15px;
+}
+
+.vdo-icon img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+p.vdo-icon-content {
+    color: #1976D2;
+    font-size: 14px;
+    margin-top: 12px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+p.have-qtn {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.have-qtn a {
+    color: #1976D2;
+    text-decoration: none;
+}
+
+.icon-box {
+    /* width: 15%; */
+    padding: 5px;
+    height: 65px;
+    margin-right: 175px;
+    margin-left: 175px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+
+.icon-box img {
+    width: 35px;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.first-box .bg-icons {
+    margin-top: 30px;
+    /* text-align: center; */
+}
+
+.bg-icons p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #fff;
+    padding: 0px 105px 0px 105px;
+}
+
+.second-banner {
+    position: relative;
+    
+}
+
+.second-banner img {
+    width: 100%;
+    
+}
+
+.second-banner-banner {
+    background-image: url(../app-hand/abha-secbg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+}
+
+.second-banner-content {
+    width: 100%;
+}
+
+.second-second {
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.approved {
+    display: flex;
+}
+
+.approved img {
+    width: 15%;
+    margin-left: 25px;
+}
+
+.approved p {
+    font-size: 12px;
+    text-shadow: 0 0 #000000cc;
+    margin-top: 18px;
+}
+
+.vcare h1 {
+    color: #050748;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 33px;
+    line-height: 70px;
+}
+
+.vcare p {
+    font-size: 16px;
+    padding-right: 218px;
+    text-transform: capitalize;
+}
+
+.create-button .second-btn {
+    background-color: #fff0;
+    text-transform: capitalize;
+    color: #2871BA;
+    font-size: 13px;
+    font-weight: 400;
+    border-color: #2871BA;
+    /* margin-left: 30px; */
+    border-radius: 5px;
+    padding: 12px 30px 12px 30px;
+    box-shadow: 0px 0px 0px 1px rgb(62 165 233 / 28%);
+}
+
+.second-banner-image {
+    width: 100%;
+    text-align: center;
+}
+
+.second-banner-image img {
+    width: 53%;
+    margin-right: 70px;
+    margin-top: 50px;
+}
+
+.app-image {
+    display: flex;
+}
+
+.app-image img {
+    width: 23%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    margin-right: 18px;
+}
+
+.feature-bg {
+    background-image: url(../app-hand/bg-fetures-app.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 40px;
+}
+
+.feature-bg-image1 img {
+    width: 400px;
+}
+
+.feature-bg-image2 img {
+    width: 90%;
+    height: auto;
+    margin-left: 50px;
+}
+.ayushman-card-area {
+    margin-bottom: 70px;
+    margin-top: 25px;
+}
+.ayushman-heading {
+    text-align: center;
+}
+.ayushman-heading h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.stylish-card {
+    border-radius: 10px;
+    margin: 35px;
+    position: relative;
+    box-shadow: 0px 0px 0px 30px #4699ce;
+}
+.card-content h3 {
+    font-size: 20px;
+    color: #2871BA;
+    text-transform: capitalize;
+}
+.card-content p {
+    font-size: 15px;
+    color: #A1A0A0;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.ayushman-iamge img {
+    max-width: 100%;
+    border-radius: 10px;
+    min-height: 240px;
+    clip-path: circle(75.7% at 50% 0);
+}
+.card-content {
+    text-align: center;
+    padding: 20px 50px;
+}
+
+
+
+.vdo-banner {
+    padding: 30px 0px 20px 0px;
+    width: 100%;
+    background-color: #dde9f3;
+    position: relative;
+}
+
+.vdo-banner .first-block {
+    width: 70%;
+    margin-top: 22px;
+}
+
+.first-block img {
+    width: 100%;
+}
+
+.first-block p {
+    font-size: 15px;
+    margin-top: 7px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.youtube-icon img {
+    width: 60%;
+}
+
+.youtube-icon {
+    position: absolute;
+    top: 235px;
+    left: 549px;
+}
+
+p.likes-views {
+    margin-top: 0px;
+    font-size: 12px;
+    color: #707070;
+}
+
+.mini-box {
+    margin-left: 25px;
+}
+
+.vdo-banner .second-block {
+    width: 30%;
+    margin-top: 22px;
+}
+
+.mini-box-first img,
+.mini-box-second img {
+    width: 82%;
+}
+
+.mini-box-first p,
+.mini-box-second p {
+    font-size: 12px;
+    margin-top: 5px;
+    padding-right: 70px;
+}
+
+.fourth-banner {
+    background-image: url(../app-hand/vacare-bg.png);
+}
+.main-fourth-banner {
+    margin-left: 20px;
+    margin-top: 70px;
+}
+p.vcare-vision {
+    font-size: 17px;
+    font-weight: 500;
+    color: #393939;
+}
+.main-fourth-banner h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 29px;
+    text-transform: capitalize;
+}
+p.para {
+    font-size: 13px;
+    text-transform: capitalize;
+    padding-right: 138px;
+    color: #A1A0A0;
+}
+.image {
+    margin-top: 70px;
+    text-align: end;
+    margin-right: 50px;
+    padding-bottom: 30px;
+}
+.image img{
+    width: 400px;
+}
+.first-footer {
+    background-color: #4699CE;
+    background-image: url(../app-hand/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    padding-bottom: 27px;
+}
+.first-footer h3 {
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ffff;
+}
+
+.first-footer h3::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 1.5px;
+    background: #ffffff;
+    left: 110px;
+}
+
+
+.list ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.list ul li {
+    margin-bottom: 15px;
+}
+.list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.first-footer-btn {
+    width: 140px;
+    border-radius: 8px;
+    border: 1px solid #2871BA;
+    padding: 8px 10px !important;
+    color: #2871BA !important;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 27px !important;
+}
+.footer-images {
+    display: grid;
+}
+.footer-images img {
+    width: 140px;
+    margin-bottom: 20px;
+}
+.second-footer {
+    padding: 8px;
+    background-color: #50B936;
+}
+.second-footer p {
+    color: #FFFFFF;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+/****** Media Query For Mobile*******/
+
+
+@media only screen and (max-width: 700px) {
+    header {
+        width: 100%;
+        height: 50px;
+    }
+
+    .main-header {
+        display: inline-flex;
+    }
+
+    .left-header {
+        width: 20%;
+    }
+
+    .logo img {
+        width: 65%;
+        margin-top: 18px;
+        margin: auto;
+        padding: 18px 0px 0px 0px;
+    }
+
+    .right-header {
+        width: 80%;
+    }
+
+    .first {
+        margin-top: 0px;
+        display: inline-flex;
+    }
+
+    select.list {
+        font-size: 7px;
+        border: none;
+        margin: auto;
+    }
+
+    p.first-para {
+        font-size: 7px;
+        margin: auto;
+    }
+
+    .right-header .new {
+        margin: auto;
+        font-size: 7px;
+        width: 8%;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .create .create-ABHA {
+        font-size: 7px;
+        padding: 0px 0px 0px 0px;
+        margin: auto;
+    }
+
+    .health .health-locker {
+        font-size: 7px;
+        padding: 0px 0px 0px 0px;
+        margin-left: 5px;
+    }
+    .first-banner-content {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .first-banner {
+        background-size: contain;
+        background-image: url(../app-hand/banner-bg2\ two.png);
+        background-repeat: no-repeat;
+        padding-top: 40px;
+        padding-bottom: 15px;
+    }
+
+    .first-banner-img img {
+        width: 80%;
+        margin-top: 48px;
+        margin-left: 50px;
+        margin-bottom: 0px;
+    }
+
+    /* .bg-image {
+        margin-top: 0px;
+        margin-left: 20px;
+    } */
+
+    /* .bg-image-content {
+    top: 0px;
+    margin: auto;
+    } */
+
+    p.first-para-content {
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 15px;
+    }
+
+    p.second-para-content {
+        color: #1976D2;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .button-icon {
+        display: flex;
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+
+    .create-button .first-btn {
+        font-size: 15px;
+        padding: 15px;
+        margin-right: 0px;
+    }
+    .create-button {
+        width: 40%;
+        display: contents;
+    }
+
+    .vdo-icon {
+        width: 15%;
+        text-align: initial;
+        margin-left: 5px;
+    }
+
+    p.vdo-icon-content {
+        width: 45%;
+        font-size: 20px;
+        margin-left: 0px;
+        margin-top: 9px;
+        margin-bottom: 0px;
+    }
+
+    p.have-qtn {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+
+    .icon-box {
+        width: 12%;
+        height: 43px;
+        margin: auto;
+    }
+
+    .icon-box img {
+        width: 23px;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+
+    .bg-icons p {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    .first-box {
+        background-size: cover;
+    }
+
+    .first-box .bg-icons {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .second-banner-image img {
+        width: 100%;
+        margin-top: 25px;
+        margin-right: 5px;
+    }
+
+    .second-second {
+        margin: auto;
+        margin-top: 5px;
+    }
+
+    .approved {
+        display: block;
+    }
+    .approved p {
+        font-size: 15px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .approved img {
+        width: 49%;
+        height: auto;
+        margin-left: 0px;
+    }
+
+   
+    .vcare h1 {
+        font-size: 25px;
+        margin-top: 25px;
+        margin-bottom: 30px;
+        line-height: 0px;
+    }
+
+    .vcare p {
+        font-size: 16px;
+        margin: auto;
+        padding: 0px;
+    }
+
+    .create-button .second-btn {
+        font-size: 15px;
+        margin: auto;
+        padding: 15px;
+    }
+    .app-image {
+        
+        margin-top: 10px;
+    }
+
+    .app-image img {
+        width: 48%;
+        margin-top: 0px;
+    }
+
+    .second-bg-image img {
+        
+        margin-top: 17px;
+        padding-right: 10px;
+    }
+
+    .vdo-banner .first-block {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .vdo-banner .second-block {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .mini-box {
+        margin-left: 0px;
+    }
+
+    .mini-box-first img, .mini-box-second img {
+        width: 100%;
+    }
+
+    .mini-box-first p, .mini-box-second p {
+        font-size: 15px;
+        margin-top: 10px;
+        padding-right: 5px;
+    }
+
+    .first-block img {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .first-block p {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .vdo-banner {
+        width: 100%;
+        background-color: #dde9f3;
+        position: relative;
+    }
+
+    .youtube-icon img {
+        width: 100%;
+        height: 25px;
+    }
+
+    .youtube-icon {
+        position: absolute;
+        top: 115px;
+        left: 188px;
+    }
+    .main-fourth-banner {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+    .image {
+        margin-top: 15px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .image img {
+        width: 350px;
+    }
+    .feature-bg-image1 img {
+        width: 100%;
+    }
+    .feature-bg-image2 img {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .ayushman-heading h3 {
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    p.vcare-vision {
+        font-size: 17px;
+        font-weight: 500;
+        color: #393939;
+        margin-bottom: 10px;
+    }
+    .main-fourth-banner h1 {
+        font-size: 34px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        text-transform: capitalize;
+    }
+    p.para {
+        font-size: 15px;
+        padding-right: 1px;
+        text-transform: capitalize;
+        color: #A1A0A0;
+    }
+    .first-footer {
+        background-color: #4699CE;        
+        padding-top: 20px;
+        background-image: none;
+    }
+    .first-footer h3 {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    .ayushman-card-area {
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+    .list ul {
+        margin-bottom: 26px;
+    }
+
+
+
+
+}

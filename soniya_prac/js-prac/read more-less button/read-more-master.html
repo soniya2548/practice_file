@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read More/Read Less Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .content-read-m {
+            margin: 20px;
+        }
+        .toggleButton-read-m {
+            margin-top: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-read-m">
+        <p class="text-read-m">
+            This is an example of a long text that will be truncated to 50 characters by default. Clicking the "Read More" button will reveal the full content, and "Read Less" will collapse it back.
+        </p>
+        <button class="toggleButton-read-m">Read More</button>
+    </div>
+    <div class="content-read-m">
+        <p class="text-read-m">
+            This is an example of a long text that will be truncated to 50 characters by default. Clicking the "Read More" button will reveal the full content, and "Read Less" will collapse it back.
+        </p>
+        <button class="toggleButton-read-m">Read More</button>
+    </div>
+    <div class="content-read-m">
+        <p class="text-read-m">
+            This is an example of a long text that will be truncated to 50 characters by default. Clicking the "Read More" button will reveal the full content, and "Read Less" will collapse it back.
+        </p>
+        <button class="toggleButton-read-m">Read More</button>
+    </div>
+    <div class="content-read-m">
+        <p class="text-read-m">
+            This is an example of a long text that will be truncated to 50 characters by default. Clicking the "Read More" button will reveal the full content, and "Read Less" will collapse it back.
+        </p>
+        <button class="toggleButton-read-m">Read More</button>
+    </div>
+    <div class="content-read-m">
+        <p class="text-read-m">
+            This is an example of a long text that will be truncated to 50 characters by default. Clicking the "Read More" button will reveal the full content, and "Read Less" will collapse it back.
+        </p>
+        <button class="toggleButton-read-m">Read More</button>
+    </div>
+    <div class="content-read-m">
+        <p class="text-read-m">
+            This is an example of a long text that will be truncated to 50 characters by default. Clicking the "Read More" button will reveal the full content, and "Read Less" will collapse it back.
+        </p>
+        <button class="toggleButton-read-m">Read More</button>
+    </div>
+<div class="content-read-m">
+        <p class="text-read-m">
+            This is an example of a long text that will be truncated to 50 characters by default. Clicking the "Read More" button will reveal the full content, and "Read Less" will collapse it back.
+        </p>
+        <button class="toggleButton-read-m">Read More</button>
+    </div>
+    <div class="content-read-m">
+        <p class="text-read-m">
+            This is another instance of a long text that will be truncated to 50 characters by default. Clicking the "Read More" button will reveal the full content, and "Read Less" will collapse it back.
+        </p>
+        <button class="toggleButton-read-m">Read More</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const textElements = document.querySelectorAll(".text-read-m");
+            const buttons = document.querySelectorAll(".toggleButton-read-m");
+
+            textElements.forEach((textElement, index) => {
+                const fullText = textElement.innerHTML;
+                const truncatedText = fullText.substring(0, 50) + '...';
+
+                let isTruncated = true;
+
+                textElement.innerHTML = truncatedText;
+
+                buttons[index].addEventListener("click", function () {
+                    if (isTruncated) {
+                        textElement.innerHTML = fullText;
+                        buttons[index].innerHTML = "Read Less";
+                    } else {
+                        textElement.innerHTML = truncatedText;
+                        buttons[index].innerHTML = "Read More";
+                    }
+                    isTruncated = !isTruncated;
+                });
+            });
+        });
+    </script>
+</body>
+</html>

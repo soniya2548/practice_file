@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0,maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <title>Document</title>
+    <style>
+
+/* --- Start Crypto Market ---- */
+.crypto-card{
+    margin-top: 5rem !important;
+    width: 50%;
+    margin: auto;
+}
+
+.crypto-card .card {
+  border-radius: 0.5rem;
+  border: 0.8px solid rgba(241, 241, 241, 1);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.07);
+}
+
+.cryp-card-time{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+.crypto-card .card-body {
+  border-radius: 0.5rem;
+  background: linear-gradient(109.57deg, #FFFFFF 3.45%, #FAFAFA 91.67%);
+}
+.cryp-card-time p {
+  color: rgba(176, 176, 176, 1);
+  font-size: 13px;
+}
+
+/* start cooming soon time */
+.countdown {
+  font-size: 28px;
+  font-weight: 500;
+  display: flex;
+  padding-left: 0;
+}
+.time-count {
+  color: rgba(0, 0, 0, 1);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background: rgba(244, 244, 244, 1);
+  border-radius: 0.3rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.time-count sub {
+  color: rgba(176, 176, 176, 1);
+  bottom: -2px;
+  vertical-align: text-bottom;
+  font-size: 0.6rem;
+}
+.count-colunm {
+  color: rgba(0, 0, 0, 1);
+  font-size: 1rem;
+  margin: 0 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.time-count .number {
+  color: rgba(0, 0, 0, 1);
+  font-size: 1rem;
+}
+
+/* end cooming soon time */
+
+/* --- End Crypto Market ---- */
+    
+
+        @media screen and (max-width: 767px) {}
+    </style>
+</head>
+
+<body>
+
+
+    <div class="crypto-card">
+        <div class="card">
+          <div class="card-body">
+            <div class="cryp-card-time">
+              <p>Coming Soon</p>
+
+              <ul class="countdown">
+
+                <li class="time-count countdown__hours">
+                  <div class="number"></div>
+                  <sub>H</sub>
+
+                </li>
+                <li class="count-colunm">:</li>
+                <li class="time-count countdown__minutes">
+                  <div class="number"></div>
+                  <sub>M</sub>
+                </li>
+                <li class="count-colunm">:</li>
+                <li class="time-count countdown__seconds">
+                  <div class="number"></div>
+                  <sub>S</sub>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!--<script src="assets/js/index.js"></script> -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script>
+
+        (() => {
+            // Specify the deadline date
+            const deadlineDate = new Date('December 31, 2099 23:59:59').getTime();
+
+            // Cache all countdown boxes into consts
+            const countdownHours = document.querySelector('.countdown__hours .number');
+            const countdownMinutes = document.querySelector('.countdown__minutes .number');
+            const countdownSeconds = document.querySelector('.countdown__seconds .number');
+
+            const countdownHours1 = document.querySelector('.countdown__hours1 .number');
+            const countdownMinutes1 = document.querySelector('.countdown__minutes1 .number');
+            const countdownSeconds1 = document.querySelector('.countdown__seconds1 .number');
+
+            const countdownHours2 = document.querySelector('.countdown__hours2 .number');
+            const countdownMinutes2 = document.querySelector('.countdown__minutes2 .number');
+            const countdownSeconds2 = document.querySelector('.countdown__seconds2 .number');
+
+            // Update the count down every 1 second (1000 milliseconds)
+            setInterval(() => {
+                // Get current date and time
+                const currentDate = new Date().getTime();
+
+                // Calculate the distance between current date and time and the deadline date and time
+                const distance = deadlineDate - currentDate;
+
+                // Calculations the data for remaining days, hours, minutes and seconds
+
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Insert the result data into individual countdown boxes
+
+                //   Card one
+                countdownHours.innerHTML = hours;
+                countdownMinutes.innerHTML = minutes;
+                countdownSeconds.innerHTML = seconds;
+                // card two
+                countdownHours1.innerHTML = hours;
+                countdownMinutes1.innerHTML = minutes;
+                countdownSeconds1.innerHTML = seconds;
+
+                //  card three 
+                countdownHours2.innerHTML = hours;
+                countdownMinutes2.innerHTML = minutes;
+                countdownSeconds2.innerHTML = seconds;
+            }, 1000);
+        })();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slick Carousel Example</title>
+  
+  <!-- Include Slick Slider CSS -->
+  <link rel="stylesheet" href="./assets/css/slick.css">
+  <link rel="stylesheet" href="./assets/css/slick-theme.css">
+
+  <style>
+    /* Custom styles for the slider container */
+    .slider-container {
+      width: 80%;
+      margin: auto;
+    }
+
+    /* Custom styles for the slider items */
+    .slider-item {
+      text-align: center;
+      padding: 20px;
+      background-color: #ddd;
+      border: 1px solid #888;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Slider Container -->
+  <div class="slider-container">
+    <!-- Slider Items -->
+    <div class="slider-item">Slide 1</div>
+    <div class="slider-item">Slide 2</div>
+    <div class="slider-item">Slide 3</div>
+    <div class="slider-item">Slide 4</div>
+    <!-- Add more slides as needed -->
+
+    <!-- Slider Navigation Buttons -->
+    <button class="slick-prev">Previous</button>
+    <button class="slick-next">Next</button>
+  </div>
+
+  <!-- Include jQuery (required by Slick Slider) -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <!-- Include Slick Slider JS -->
+  <script src="assets/js/slick.min.js"></script>
+
+  <script>
+    // Initialize Slick Slider
+    $(document).ready(function(){
+      $('.slider-container').slick({
+        dots: true, // Show dots for navigation
+        prevArrow: $('.slick-prev'), // Use custom prev button
+        nextArrow: $('.slick-next') // Use custom next button
+      });
+    });
+  </script>
+
+</body>
+</html>

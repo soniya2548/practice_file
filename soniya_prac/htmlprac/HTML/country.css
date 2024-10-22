@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+max-width: 1440px !important;
+}
+.country-box{
+    text-align: center;
+    margin-top: 20px;
+}
+.images-box {
+    width: 100%;
+    display: inline-flex;
+    overflow-x: hidden;
+}
+.images {
+    width: 220px;
+    margin-right: 10px;
+    text-align: center;
+}
+.images img{
+    width: 100px;
+}

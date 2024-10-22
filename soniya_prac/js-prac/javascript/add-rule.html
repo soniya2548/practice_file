@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#prefix,#item-category,#item-name,#city,#locality").change(function () {
+        var url = ($('#prefix').val());
+        if ($('#item-category').prop('checked')) {
+          url = url + '/' + $('#item-category').val();
+        }
+        if ($('#item-name').prop('checked')) {
+          url = url + '/' + $('#item-name').val();
+        }
+        if ($('#city').prop('checked')) {
+          url = url + '/' + $('#city').val();
+        }
+        if ($('#locality').prop('checked')) {
+          url = url + '/' + $('#locality').val();
+        }
+
+
+
+        $('#url').val(url);
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+  <div style="border: 1px solid black;padding:10px;">
+    prefix: <input type="text" id="prefix"><br>
+    Item Category: <input type="checkbox" id="item-category" name="item-category" value="item_category"><br>
+    Item Name: <input type="checkbox" id="item-name" name="item-name" value="item_name"><br>
+    City: <input type="checkbox" id="city" name="city" value="city"><br>
+    Locality: <input type="checkbox" id="locality" name="locality" value="locality"><br>
+    URL Structure: <input type="text" id="url" name="url" value="" width="500px"><br>
+  </div>
+
+  <p>Click an input field to get focus. Click outside an input field to lose focus.</p>
+
+</body>
+
+</html>
+
+
+
+<!-- 
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#prefix,#item-category,#item-name,#city,#locality").change(function(){
+	var url = ($('#prefix').val());
+    $('input[type=checkbox]').each(function(e){
+        if($(this).prop('checked')){
+            url = url + '/' + $(this).val();
+        }
+    });
+
+    $('#url').val(url);
+  });
+});
+</script>
+</head>
+<body>
+
+<div style="border: 1px solid black;padding:10px;">
+ prefix: <input type="text" id="prefix"><br>
+  Item Category: <input type="checkbox" id="item-category" name="item-category" value="item_category"><br>
+  Item Name:  <input type="checkbox" id="item-name" name="item-name" value="item_name"><br>
+  City:  <input type="checkbox" id="city" name="city" value="city"><br>
+  Locality:  <input type="checkbox" id="locality" name="locality" value="locality"><br>
+  URL Structure:  <input type="text" id="url" name="url" value="" width="500px" ><br>
+</div>
+
+<p>Click an input field to get focus. Click outside an input field to lose focus.</p>
+
+</body>
+</html>
+
+ -->

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0,maximum-scale=1.0, user-scalable=no">
+
+  <style>
+    .add-read-more.show-less-content .second-section,
+    .add-read-more.show-less-content .read-less {
+      display: none;
+    }
+
+    .add-read-more.show-more-content .read-more {
+      display: none;
+    }
+
+    .add-read-more .read-more,
+    .add-read-more .read-less {
+      font-weight: bold;
+      margin-left: 2px;
+      color: blue;
+      cursor: pointer;
+    }
+
+    .add-read-more {
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p class="add-read-more show-less-content"><strong>Lorem Ipsum is simply dummy text of the printing and</strong>
+      typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+      unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+      centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
+      the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+      and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+    </p>
+  </div>
+
+  <script>
+
+    $(document).ready(function () {
+      function AddReadMore() {
+        //This limit you can set after how much characters you want to show Read More.
+        var carLmt = 300;
+        // Text to show when text is collapsed
+        var readMoreTxt = " ...read more";
+        // Text to show when text is expanded
+        var readLessTxt = " read less";
+
+
+        //Traverse all selectors with this class and manupulate HTML part to show Read More
+        $(".add-read-more").each(function () {
+          if ($(this).find(".first-section").length)
+            return;
+
+          var allstr = $(this).html();
+          if (allstr.length > carLmt) {
+            var firstSet = allstr.substring(0, carLmt);
+            var secdHalf = allstr.substring(carLmt, allstr.length);
+            var strtoadd = firstSet + "<span class='second-section'>" + secdHalf + "</span><span class='read-more'  title='Click to Show More'>" + readMoreTxt + "</span><span class='read-less' title='Click to Show Less'>" + readLessTxt + "</span>";
+            $(this).html(strtoadd);
+          }
+        });
+
+        //Read More and Read Less Click Event binding
+        $(document).on("click", ".read-more,.read-less", function () {
+          $(this).closest(".add-read-more").toggleClass("show-less-content show-more-content");
+        });
+      }
+
+      AddReadMore();
+    });
+
+  </script>
+  <script></script>
+</body>
+
+</html>

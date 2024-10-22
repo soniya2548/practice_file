@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cal-2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a class="nav__logo" href="Index.html">Logo</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="Index.html">Calculator</a></li>
+                    <li class="nav__item"><a class="nav__link" href="Area-of-circle.html">Area of circle</a></li>
+                    <li class="nav__item"><a class="nav__link" href="Area-of-Square.html">Area of square</a></li>
+                    <li class="nav__item"><a class="nav__link" href="Area-of-Triangle.html">Area of triangle</a></li>
+                    <li class="nav__item"><a class="nav__link" href="Area-of-Pentagon.html">Area of pentagon</a></li>
+                    <li class="nav__item"><a class="nav__link" href="Area-of-Rectangle.html">Area of rectangle</a></li>
+                    <li class="nav__item"><a class="nav__link" href="Area-of-Septagon.html">Area of septagon</a></li>
+                    <li class="nav__item"><a class="nav__link" href="Area-of-Trapezium.html">Area of trapezium</a></li>
+                </ul>
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <!-- Search button -->
+                <i class="ri-search-line nav__search" id="search-btn"></i>
+                <!-- Login button -->
+                <i class="ri-user-line nav__login" id="login-btn"></i>
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="calc">
+        <h1 id="heading">Area Of Trapezium</h1>
+        <div class="box-c">
+            <div class="container">
+                <div class="calc">
+                    <div class="row d-flex">
+                        <p class="col-10" type="text" id="inputResult"></p>
+                        <p class="col-2" id="p-result">Result</p>
+                    </div>
+                    <div class="row mt-4">
+                        <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+                            class="col-4" id="ABase" placeholder="A base">
+                        <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+                            class="col-4" id="BBase" placeholder="B base">
+                        <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+                            class="col-4" id="Height" placeholder="Height">
+                    </div>
+
+
+                    <div class="row mt-3">
+                        <a class="btn btn-primary"
+                            onclick="CalculateAreaOfTrapezium(document.getElementById('ABase').value,document.getElementById('BBase').value,document.getElementById('Height').value)">
+                            AREA
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="cal-2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+</body>
+
+</html>

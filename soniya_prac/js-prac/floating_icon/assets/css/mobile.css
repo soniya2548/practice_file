@@ -1,0 +1,94 @@
+@media screen and (max-width: 767px) {
+  /* start responsive side menu */
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 8%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    /* transition: all 0.7s ease; */
+}  
+
+
+.nav-links {
+    position: fixed;
+    background: #ffffff;
+    height: 100vh;
+    width: 66%;
+    left: 0px;
+    flex-direction: column;
+    clip-path: circle(50px at 90% -20%);
+    -webkit-clip-path: circle(50px at 90% -10%);
+    /* transition: all 1s ease-out; */
+    pointer-events: none;
+    align-items: start;
+    top: 0px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    transition: all 0.7s ease;
+    width: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.hamburger.toggle {
+    position: fixed;
+    left: 55%;
+    top: 4%;
+}
+
+.headr-combo .fade:not(.show) {
+    opacity: unset;
+}
+
+.nav-links.open {
+    clip-path: circle(1000px at 100% -10%);
+    -webkit-clip-path: circle(1000px at 100% -10%);
+    pointer-events: all;
+}
+
+body.open {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: #FFFF;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.headr-combo .nav-list li a {
+    color: #000;
+    font-family: SourceSans3-Regular;
+}
+
+.headr-combo .nav-list {
+    padding: 0 !important;
+    display: block;
+}
+.mob-logo {
+    background-color: #000;
+    display: block;
+    padding: 0.5rem 0.8rem;
+}
+.mob-logo img{
+    width: 65px;
+}
+
+
+  /* End responsive side menu */
+}

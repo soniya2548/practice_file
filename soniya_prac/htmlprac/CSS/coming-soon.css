@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background: linear-gradient(to right, #4490ad9e 50%, #badae1 50% ); */
+    /* color: #fff; */
+    font-family: serif;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main-details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 4rem;
+}
+
+.side-image {
+    width: 50%;
+}
+
+h1.title {
+    display: inline-block;
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: black;
+    width: 140px;
+}
+
+h3.intro {
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 2rem;
+    margin-bottom: 3rem;
+    color: #ccc;
+}
+
+.email-form {
+    background-color: rgb(237 243 248 / 62%);
+    padding: 2rem;
+    width: 86%;
+    border-radius: 5px;
+    box-shadow: 0px 25px 50px -12px rgb(0 0 0 / 25%);
+}
+
+form {
+    position: relative;
+}
+
+form input {
+
+    font-family: inherit;
+    outline: none;
+    font-size: 90%;
+    padding: 10px 1rem;
+    border: none;
+    display: block;
+    border-radius: 2px;
+}
+
+input.email {
+    width: 100%;
+    background-color: #f5f5f5b3;
+}
+
+input.submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #934914;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color .2s ease;
+}
+
+form .submit:hover {
+    background-color: black;
+}
+.social-icon {
+    width: 10%;
+    display: flex;
+    margin-left: 36%;
+    margin-top: 10rem;
+}
+img {
+    width: 100%;
+    cursor: pointer;
+}
+::placeholder{
+    font-size: 1rem;
+    letter-spacing: 1px;
+}

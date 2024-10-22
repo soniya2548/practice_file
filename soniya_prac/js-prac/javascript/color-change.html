@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Change</title>
+    <!-- <link rel="stylesheet" href="cal-2.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/4.4.0/jquery.min.js">
+    </script>
+
+    <style>
+        .clr-chng-box {
+            width: 35%;
+            margin: auto;
+            background: #eee4e47a;
+            padding: 20px;
+            margin-top: 5%;
+            border: 1px solid gray;
+        }
+
+        .clr-chng {
+            text-align: center;
+        }
+
+        .clr-chng h1 {
+            font-size: 23px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="clr-chng-box" id="bgcolor">
+        <div class="container">
+            <div class="clr-chng">
+                <h1 id="text">Color Change</h1>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <a class="btn btn-primary" id="backgroundTored" onclick="BgColorRed()">B 1</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn btn-primary" id="backgroundToGreen" onclick="BgColorGreen()">B 2</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn btn-primary" id="backgroundToYellow" onclick="BgColorYellow()">B 3</a>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <a class="btn btn-primary" id="textTored" onclick="TextColorRed()">B 4</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn btn-primary" id="textToGreen" onclick="TextColorGreen()">B 5</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn btn-primary" id="textToYellow" onclick="TextColorYellow()">B 6</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function BgColorRed() {
+            document.getElementById("text").style.color = "red";
+        }
+        function BgColorGreen() {
+            document.getElementById("text").style.color = "green";
+        }
+        function BgColorYellow() {
+            document.getElementById("text").style.color = "yellow";
+        }
+        function TextColorRed() {
+            document.getElementById("bgcolor").style.backgroundColor = "red";
+        }
+        function TextColorGreen() {
+            document.getElementById("bgcolor").style.backgroundColor = "green";
+        }
+        function TextColorYellow() {
+            document.getElementById("bgcolor").style.backgroundColor = "yellow";
+        }
+    </script>
+    <!-- <script src="cal-2.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/4.4.0/jquery.min.js">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+@media screen and (max-width: 767px) {
+    /* start responsive side menu */
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 4%;
+        top: 26.5%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        /* transition: all 0.7s ease; */
+    }
+
+
+    .nav-links {
+        position: fixed;
+        background: #ffffff;
+        height: 100vh;
+        width: 95%;
+        box-shadow: 7px 0px 7px -4px #e5d7d7;
+        left: 0px;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        /* transition: all 1s ease-out; */
+        pointer-events: none;
+        align-items: start;
+        top: 0px;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        transition: all 0.7s ease;
+        width: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .hamburger.toggle {
+        position: fixed;
+        left: 83%;
+        top: 3.5%;
+    }
+
+    .headr-combo .fade:not(.show) {
+        opacity: unset;
+    }
+
+    .nav-links.open {
+        clip-path: circle(1000px at 100% -10%);
+        -webkit-clip-path: circle(1000px at 100% -10%);
+        pointer-events: all;
+    }
+
+    body.open {
+        background-color: rgba(0, 0, 0, .8);
+    }
+
+    .hamburger div {
+        width: 30px;
+        height: 3px;
+        background: #000;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .headr-combo .nav-list li a {
+        color: #000;
+        font-family: SourceSans3-Regular;
+    }
+
+    .headr-combo .nav-list {
+        padding: 0 !important;
+        display: inline-grid;
+    }
+
+    .mob-logo {
+        display: block;
+        padding: 1.5rem 0.8rem;
+    }
+
+    .mob-logo img {
+        width: 255px;
+    }
+
+    .top-search {
+        display: none;
+    }
+
+    .top-head {
+        padding: 4% 5%;
+        display: inline-block;
+        box-shadow: 0px 7px 7px -4px #e5d7d7;
+    }
+
+    .t-nav {
+        justify-content: unset;
+        align-items: center;
+    }
+
+    .brand {
+        width: 240px;
+    }
+
+    .logo-div {
+        width: 100%;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .top-head-nav {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .t-nav span {
+        margin-left: 1.5rem;
+    }
+
+    .sign-in {
+        display: none;
+    }
+
+    .t-nav ul li {
+        margin: 0 0.2rem;
+        font-size: 11px;
+    }
+
+    .user {
+        margin-right: 1rem;
+        display: block !important;
+    }
+
+    .user span {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        border: 1px solid #707070;
+    }
+
+    .user span a {
+        color: #000;
+    }
+
+    .user span a i {
+        font-size: large;
+    }
+
+    nav.navigation {
+        background: unset;
+        box-shadow: unset;
+    }
+
+    .nav-list li {
+        letter-spacing: 1px;
+        font-weight: 600;
+        padding: 0.5rem 0;
+        margin-left: 1rem;
+    }
+
+    /* End responsive side menu */
+
+    .widget-title {
+        position: relative;
+        padding-bottom: 25px;
+    }
+
+    .widget-title.active {
+        position: relative;
+        padding-bottom: 0px !important;
+    }
+
+    .widget-title:after {
+        position: absolute;
+        content: "+";
+        right: 0;
+        top: -12%;
+        font-size: 24px;
+    }
+
+    .widget-title.active:after {
+        content: "-";
+    }
+
+    .f-items {
+        display: none;
+        padding: 10px;
+    }
+
+    .f-items li a {
+        font-size: 16px;
+    }
+
+    .footer ul li {
+        line-height: 33px;
+    }
+
+    .head-drop-lable {
+        color: #000;
+    }
+
+    .sub-nav-links {
+        position: unset !important;
+    }
+
+    .prod-head {
+        width: 100%;
+    }
+
+    .product span a {
+        padding: 0.2rem 1.5rem;
+    }
+
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <title>Document</title>
+    <style>
+        .footer {
+            background-color: aquamarine;
+            padding: 20px 0px;
+            padding-bottom: 0px;
+        }
+
+
+        .f-phone {
+            font-size: 25px !important;
+            font-weight: 600 !important;
+        }
+
+        .footer_col {
+            margin-top: 50px;
+        }
+
+        .foot-lable {
+            font-weight: 600;
+            font-size: 16px !important;
+            /* margin-bottom: 15px; */
+            padding-bottom: 20px;
+            position: relative;
+            list-style-type: disc !important;
+        }
+
+        .foot-lable::before {
+            position: absolute;
+            content: '';
+            width: 22px;
+            height: 2px;
+            top: 28px;
+            background: #959595;
+        }
+
+        .foot-lable:hover::before {
+            width: 50px;
+            background: var(--red);
+            transition: all 0.3s ease;
+        }
+
+        .foot-lable::marker {
+            color: var(--red);
+        }
+
+        .footer ul li {
+            list-style-type: none;
+            font-size: 13px;
+            line-height: 24px;
+        }
+
+        .footer ul li a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .f-social {
+            display: flex;
+            padding: 0;
+            justify-content: center;
+        }
+
+        .f-social li {
+            margin: 0px 5px;
+        }
+
+        .footer-bottom {
+            background-color: #6c0000;
+            padding: 1% 1%;
+            text-align: center !important;
+        }
+
+        .footer-bottom p {
+            margin-bottom: 0px !important;
+            color: #fff !important;
+            font-weight: 300;
+            font-size: 13px !important;
+        }
+
+
+        @media screen and (max-width: 767px) {
+            .footer {
+		margin-top: 30px;
+	}
+
+	.f-social {
+		margin-left: 10%;
+	}
+
+	.footer_col {
+		margin-top: 15px;
+	}
+
+	.footer-bottom {
+		padding: 2% 5%;
+	}
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <!------ Start Footer Section ------>
+    <section class="footer">
+        <div class="container">
+            <div class="footer_col">
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-4 justify-content-between">
+                    <div class="col">
+                        <ul>
+                            <li class="foot-lable active ">
+                                COMPANY
+                            </li>
+                            <li>
+                                <a href="about-us.html"> About Us </a>
+                            </li>
+                            <li>
+                                <a href="mission-vission.html"> Vision/Mission/Values</a>
+                            </li>
+                            <li>
+                                <a href="accreditation.html">Accreditations</a>
+                            </li>
+                            <li>
+                                <a href="franchise.html">Franchise </a>
+                            </li>
+                            <li>
+                                <a href="privacy-policy.html">Privacy & Policy </a>
+                            </li>
+                            <li>
+                                <a href="term-condition.html">Terms & Condition</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li class="foot-lable active">
+                                PATIENTS
+                            </li>
+                            <li>
+                                <a href="">Book a Test</a>
+                            </li>
+                            <li>
+                                <a href="find-center.html">Find A Center</a>
+                            </li>
+                            <li>
+                                <a href="packages.html"> Search for Packages </a>
+                            </li>
+                            <!-- <li>
+                                    <a href="amins">Home Collection Query</a>
+                                </li> -->
+                            <li>
+                                <a href="testimonial.html">Testimonial </a>
+                            </li>
+                            <li>
+                                <a href="faq.html">FAQ's</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li class="foot-lable active">
+                                Contact Us
+                            </li>
+                            <li>
+                                <a href="registered-office.html">Registered Office </a>
+                            </li>
+                            <li>
+                                <a href="contact-us.html">Contact US</a>
+                            </li>
+                            <li>
+                                <a href="career.html"> Career</a>
+                            </li>
+                            <!-- <li>
+                                    <a href="amins">Testimonial</a>
+                                </li> -->
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li class="foot-lable active">
+                                DOCTORS
+                            </li>
+                            <li>
+                                <a href="#">Our Department </a>
+                            </li>
+                            <li>
+                                <a href="general-enquiry.html">General Enquiry</a>
+                            </li>
+                            <!-- <li>
+                                    <a href="amins">Corporate Partners
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="amins"> Career</a>
+                                </li> -->
+                        </ul>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-bottom">
+        <p> © 2023 pathword - All rights reserved. Designed & Developed by AbyM Technology
+            <!-- <span><a href="https://abym.in" target="_blank">AbyM Technology</a></span> -->
+        </p>
+    </section>
+    <!------ End Footer Section ------>
+
+
+    <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

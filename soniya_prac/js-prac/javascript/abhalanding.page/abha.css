@@ -1,0 +1,883 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+    background-color: #5052a3;
+    box-shadow: 0px 4px 6px 1px rgb(0 0 0 / 10%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+.sidebar {
+    display: contents;
+}
+.logo-img{
+    width: 60%;
+}
+nav {
+    width: 100%;
+    padding: 20px 0;
+}
+nav .menu {
+    max-width: 1270px;
+    background: #5052A3;
+    margin: auto;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.drop {
+    font-size: 11px;
+    background: unset;
+    color: #fff;
+    border: none;
+}
+.dropdown-menu{
+    background: unset !important;
+    border: unset !important;
+}
+.dropdown-menu li a {
+    font-size: 12px;
+    width: 100px;
+    color: #fff;
+    background-color: #5052A3;
+}
+i.fa.fa-angle-down {
+    font-size: 10px;
+    margin: auto;
+    margin-left: 6px;
+    color: #fff;
+}
+
+.first-banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+    background-image: url(../Office-work/abhalanding.page/bg01-image.png);
+}
+.phone-image {
+    width: 420px;
+    margin-bottom: 15px;
+}
+.first-banner .first {
+    margin-top: 45px;
+}
+.arrow ul {
+    margin-top: 35px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.arrow ul a {
+    color: #363434;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.arrow ul a i {
+    margin-right: 7px;
+    color: #000;
+    font-size: 13px;
+}
+.para-nation {
+    display: flex;
+}
+.first-para01 {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0px;
+    line-height: 28px;
+}
+.national-image {
+    width: 50%;
+    text-align: end;
+}
+.national-image img{
+    width: 90px;
+}
+.first-heading {
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-right: 200px;
+    color: #5052A3;
+    margin-top: 15px;
+    padding-right: 90px;
+}
+.first-app-icon {
+    width: 300px;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+.first-para02 {
+    font-size: 12px;
+    color: #363434;
+    margin-left: 163px;
+    margin-top: 35px;
+    font-weight: 500;
+}
+.second-box .second {
+    margin-top: 50px;
+}
+.second-heading {
+    font-size: 30px;
+    color: #5052A3;
+    margin-bottom: 30px;
+}
+.para-second {
+    font-size: 15px;
+    line-height: 30px;
+}
+.pm-modi-image {
+    width: 585px;
+    height: 350px;
+    margin-left: 40px;
+}
+.second-banner{
+    background-repeat: no-repeat;
+    background-image: url(../Office-work/abhalanding.page/second-banner.png);
+    /* height: 300px; */
+    margin-top: 50px;
+    background-size: cover;
+    width: 100%;
+}
+.third-heading {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    margin: 0;
+}
+.check-icon {
+    width: 30px;
+    margin-right: 15px;
+}
+.check-para {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+}
+.second-banner-para {
+    font-size: 17px;
+    color: #fff;
+}
+.fourth-box .fourth{
+    margin-top: 50px;
+}
+.fourth-icon-image {
+    background: #FF7E48;
+    margin-bottom: 35px;
+    margin-left: 25px;
+    border-radius: 8px;
+    width: 610px;
+    height: 59px;
+    position: relative;
+}
+.fourth-icon-image img {
+    position: relative;
+    width: 100px;
+    top: -18px;
+    left: -35px;
+}
+span.fourth-para {
+    position: absolute;
+    font-size: 14px;
+    margin-top: 17px;
+    color: #fff;
+}
+.third-banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 380px; */
+    background-image: url(../Office-work/abhalanding.page/third-banner.png);
+}
+.third-phone-image {
+    width: 390px;
+    margin-left: 220px;
+}
+.fifth-box .fifth {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.fifth-para {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 25px;
+    line-height: 30px;
+}
+.fifth-heading {
+    font-size: 30px;
+    color: #5052A3;
+    margin-top: 15px;
+}
+.sixth-box .sixth {
+    margin-top: 25px;
+}
+.sixth-msg-image {
+    width: 310px;
+    margin-left: 120px;
+    margin-bottom: 10px;
+}
+.sixth-heading {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #5052A3;
+    margin-top: 50px;
+}
+.sixth-para {
+    color: #545454;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+}
+.seventh-box .seventh {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.fourth-banner{
+    /* overflow-x: hidden; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../Office-work/abhalanding.page/fourth-banner.png);
+}
+.fourth-heading {
+    font-size: 30px;
+    color: #5052A3;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+.seventh-para {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    margin: 0;
+}
+.hospital-image {
+    width: 315px;
+    margin-left: 85px;
+}
+.eigth-box .eigth {
+    margin-top: 35px;
+}
+.eigth-mail-image {
+    width: 320px;
+    margin-left: 115px;
+}
+.eigth-heading {
+    font-size: 30px;
+    color: #5052A3;
+    margin-bottom: 15px;
+}
+.eigth-para {
+    font-size: 15px;
+    line-height: 30px;
+    color: #545454;
+}
+.fifth-banner {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../Office-work/abhalanding.page/fifth-banner-img.png);
+}
+.fifth-banner-heading {
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 40px 0px 40px;
+    color: #335C99;
+    margin-bottom: 20px;
+}
+.fifth-banner-img {
+    margin-bottom: 15px;
+    margin-left: 70px;
+    margin-top: 15px;
+}
+.fifth--banner-para {
+    font-size: 15px;
+    font-weight: 500;
+}
+.fifth-banner-icon {
+    width: 45px;
+    margin-right: 7px;
+}
+.hand-tablet-image {
+    width: 315px;
+    margin-top: 15px;
+}
+.approved-by {
+    width: 260px;
+    /* margin-top: 50px; */
+    margin-left: 35px;
+}
+.tenth-heading {
+    font-size: 30px;
+    color: #335C99;
+    margin-top: 35px;
+    margin-left: 20px;
+}
+.tenth-para {
+    font-size: 15px;
+    color: #545454;
+    padding-right: 170px;
+    line-height: 30px;
+    margin-left: 20px;
+}
+.tenth-second-para {
+    color: #363434;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+.tenth-image {
+    margin-left: 20px;
+}
+.app-stor {
+    width: 115px;
+    margin-right: 8px;
+    /* margin-left: 20px; */
+}
+.vl {
+    border-right: 2px solid #54545499;
+    height: 200px;
+    margin-top: 40px !important;
+}
+.sixth-banner{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../Office-work/abhalanding.page/fourth-banner.png);
+}
+.eleventh-heading {
+    text-align: center;
+    font-size: 30px;
+    color: #335C99;
+    padding-top: 20px;
+}
+.eleventh-para {
+    font-size: 14px;
+    text-align: center;
+    color: #5E5E5E;
+    margin-bottom: 30px;
+    line-height: 26px;
+}
+.image-lock {
+    width: 210px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+}
+.eleventh-second-heading {
+    font-size: 30px;
+    color: #335C99;
+    margin-bottom: 15px;
+}
+.eleventh-second-para {
+    font-size: 14px;
+    color: #5E5E5E;
+    line-height: 28px;
+}
+.dr-app-image {
+    width: 240px;
+    margin-top: 25px;
+    margin-left: 115px;
+}
+.twelfth-heading {
+    font-size: 30px;
+    color: #335C99;
+    margin-top: 40px;
+}
+.twelfth-para {
+    font-size: 15px;
+    color: #545454;
+    margin-top: 20px;
+    line-height: 30px;
+    padding-right: 115px;
+}
+.connectivity-image {
+    width: 225px;
+    float: right;
+    margin-right: 105px;
+    margin-bottom: 20px;
+}
+.thirteenth-heading {
+    font-size: 30px;
+    color: #335C99;
+    margin-top: 15px;
+}
+.thirteenth-para {
+    font-size: 15px;
+    margin-top: 20px;
+    color: #5E5E5E;
+    line-height: 25px;
+    margin-bottom: 0;
+    padding-right: 102px;
+}
+.thirteenth-box .thirteenth {
+    margin-top: 25px;
+    padding-left: 40px;
+}
+/* .footer-image {
+    width: 100%;
+} */
+#check {
+    display: none;
+}
+i.fa.fa-times {
+    display: none;
+}
+i.fa.fa-bars {
+    display: none;
+}
+nav .button {
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+nav .cancel {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+
+}
+footer {
+    background: #000000d9;
+}
+h3.list-heading {
+    font-size: 28px;
+    color: #ffffffde;
+    text-transform: capitalize;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.list ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-left: 12px;
+}
+.list ul li {
+    margin-bottom: 15px;
+}
+.list li {
+    text-transform: capitalize;
+    color: #ffffffb8;
+    text-decoration: none;
+    font-size: 14px;
+}
+h4.sub-heading {
+    font-size: 18px;
+}
+i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #ffffffe6;
+}
+.footer-icons i{
+    font-size: 30px;
+}
+.arrow-btn{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.arrow-btn a {
+    height: 39px;
+    width: 37px;
+    text-align: center;
+    background-color: #5052a3;
+    display: block;
+    border-radius: 4px;
+    
+}
+.arrow-btn a:hover{
+    background-color: #3f419f;
+    box-shadow: inset 0px 0px 6px 2px #fff;
+}
+.arrow-btn a i {
+    margin-left: 10px;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+
+
+/****** Media Query For Mobile*******/
+
+@media only screen and (max-width: 700px){
+    nav {
+        width: 100%;
+        padding: 25px 0;
+    }
+    nav .button {
+        font-size: 30px;
+        margin: 0;
+        display: block;
+    }
+    .menu .sidebar {
+        
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        max-width: 400px;
+        padding-top: 45px;
+        height: 100%;
+        transition: all 0.5s ease;
+        background: #010101db;
+    }
+    .sidebar button.drop:hover{
+        cursor: pointer;
+        transition: all 0.5s ease;
+        /* background: #010101db; */
+        box-shadow: inset 0px 0px 15px 0px #fff;
+    }
+    .sidebar button.drop {
+        background: #5052A3;
+        display: flex;
+        width: 75%;
+        margin: auto;
+        margin-top: 20px;
+        font-size: 15px;
+        padding: 8px 8px 8px 25px;
+        border-radius: 4px;
+    }
+    #check:checked~ .sidebar {
+        left: 0;
+    }
+    i.fa.fa-angle-down {
+        display: none;
+    }
+    .menu .drop {
+        display: block;
+        font-size: 23px;
+        width: 100%;
+        margin-top: 30px;
+        box-shadow: none;
+        text-align: center;
+    }
+    .drop {
+        display: block;
+        font-size: 11px;
+        background: unset;
+        color: #fff;
+        border: none;
+    }
+   
+    .dropdown-menu li a {
+        font-size: 12px;
+        width: 100px;
+        color: #fff;
+        background-color: #5052A3;
+    }
+    i.fa.fa-angle-down {
+        font-size: 10px;
+        margin: auto;
+        margin-left: 6px;
+        color: #fff;
+    }
+    i.fa.fa-times {
+        display: block;
+    }
+    i.fa.fa-bars {
+        display: block;
+    }
+    nav label.bars {
+        display: block;
+    }
+    #check:checked~label.bars {
+        display: none;
+    }
+
+    #check:checked~ul label.cancel {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+    .phone-image {
+        width: 100%;
+        /* margin-bottom: 15px; */
+    }
+    .pm-modi-image {
+        width: 100%;
+        margin: 0;
+    }
+    .third-phone-image {
+        width: 100%;
+        margin: 0;
+    }
+    .sixth-msg-image {
+        width: 100%;
+        margin: 0;
+    }
+    .hospital-image {
+        width: 100%;
+        margin: 0;
+    }
+    .eigth-mail-image {
+        width: 100%;
+        margin: 0;
+    }
+    .approved-by {
+        width: 100%;
+        margin: 0;
+        margin-top: 15px;
+    }
+    .hand-tablet-image {
+        width: 100%;
+        /* margin-top: 15px; */
+    }
+    .image-lock {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .dr-app-image {
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .connectivity-image {
+        width: 100%;
+        margin: 0;
+    }
+    .second-banner {
+        background-size: cover;
+        margin: 0;
+        width: 100%;
+        margin-top: 15px;
+    }
+    .fourth-icon-image {
+        width: 100%;
+        margin: 0;
+        height: 45px;
+        margin-bottom: 20px;
+    }
+    .fourth-icon-image img {
+        width: 80px;
+        top: -17px;
+        left: -19px;
+    }
+    span.fourth-para {
+        position: absolute;
+        margin: 0;
+    }
+    .first-banner {
+        margin-top: 90px;
+    }
+    .first-banner .first {
+        margin: 0;
+    }
+    .first-para01 {
+        font-size: 15px;
+        font-weight: 500;
+        margin: 0px;
+        margin-top: 15px;
+        text-align: center;
+        line-height: 28px;
+    }
+    .para-nation {
+        display: block;
+    }
+    .national-image {
+        width: 100%;
+        margin-top: 15px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .first-heading {
+        text-align: center;
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+    }
+    .first-app-icon {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-top: 15px;
+    }
+    .first-para02 {
+        font-size: 12px;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .arrow ul {
+        padding: 0;
+        list-style: none;
+        display: block;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .second-box .second {
+        margin-top: 15px;
+    }
+    .second-heading {
+        font-size: 30px;
+        /* color: #5052A3; */
+        margin: 0;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .para-second {
+        font-size: 15px;
+        line-height: 30px;
+        text-align: justify;
+        margin: 0;
+    }
+    .third-heading {
+        margin: 0;
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    .check-para {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .fifth-heading {
+        margin: 0;
+        text-align: center;
+    }
+    .fifth-para {
+        text-align: justify;
+        margin: 0;
+        margin-top: 10px;
+    }
+    .sixth-heading {
+        font-size: 30px;
+        text-align: center;
+        margin: 0;
+    }
+    .sixth-para {
+        text-align: justify;
+        margin: 0;
+        margin-top: 15px;
+    }
+    .fourth-heading {
+        font-size: 30px;
+        margin: 0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .seventh-para {
+        /* font-size: 15px; */
+        /* line-height: 30px; */
+        /* font-weight: 400; */
+        margin: 0;
+        text-align: justify;
+    }
+    .eigth-heading {
+        /* font-size: 30px; */
+        /* color: #5052A3; */
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .eigth-para {
+        font-size: 15px;
+        text-align: justify;        
+    }
+    .fifth-banner-heading {
+        font-size: 19px;
+        font-weight: 700;
+        margin: 0;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .fifth-banner-img {
+        /* margin-bottom: 15px; */
+        /* margin-left: 70px; */
+        /* margin-top: 15px; */
+        margin: 0;
+        margin-top: 10px;
+    }
+    .fifth-banner-icon {
+        width: 35px;
+        margin: 0;
+        margin-right: 7px;
+    }
+    .fifth--banner-para {
+        margin: 0;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .vl {
+        display: contents;
+        margin: 0;
+    }
+    .tenth-heading {
+        font-size: 30px;
+        text-align: center;
+        margin: 0;
+        margin-top: 10px;
+    }
+    .tenth-para {
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+        text-align: justify;
+        margin-top: 15px;
+    }
+    .tenth-second-para {
+        margin: 0;
+        font-weight: 700;
+        margin-top: 7px;
+    }
+    .tenth-image {
+        margin: 0;
+        margin-top: 20px;
+    }
+    .twelfth-heading {
+        font-size: 30px;
+        text-align: center;       
+        margin: 0;      
+    }
+    .twelfth-para {
+        font-size: 15px;
+        text-align: justify;
+        margin-top: 15px;
+        padding: 0;
+    }
+    .thirteenth-box .thirteenth {
+        margin: 0;
+        padding: 0;
+        padding-left: 10px;
+    }
+    .thirteenth-heading {
+        font-size: 30px;
+        text-align: center;
+        margin: 0;
+    }
+    .eleventh-para {
+        font-size: 14px;
+        text-align: justify;
+        color: #5E5E5E;
+        margin: 0;
+    }
+    .eleventh-second-heading {
+        text-align: center;
+        margin: 0;
+        margin-top: 15px;
+    }
+    .eleventh-second-para {
+        margin-top: 10px;
+        text-align: justify;
+    }
+    .thirteenth-para {
+        margin: 0;
+        padding: 0;
+        padding-right: 10px;
+        margin-top: 15px;
+        text-align: justify;
+    }
+}

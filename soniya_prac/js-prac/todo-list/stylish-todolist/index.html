@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Todo List</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Start Header -->
+    <div class="header">
+        <div class="main-headr">
+            <div class="top-head">
+                <div class="head-phn">
+                    <a href="tel:+91-7838275539" class="">
+                        <span><img src="assets/img/icon/mobile.png" alt="" /></span>
+                        +91-7838275539
+                    </a>
+                </div>
+                <div class="head-social-icon">
+                    <a href="">
+                        <img src="assets/img/social-icon/twitter.png" alt="" />
+                    </a>
+                    <a href="">
+                        <img src="assets/img/social-icon/facebook.png" alt="" />
+                    </a>
+                    <a href="">
+                        <img src="assets/img/social-icon/instagram.png" alt="" />
+                    </a>
+                </div>
+            </div>
+            <nav class="navigation">
+                <div class="col-md-3">
+                    <div class="brand">
+                        <a href="#"><img src="assets/img/logo/logo-icon-png-8.jpg" alt="" /></a>
+                    </div>
+                </div>
+                <div class="col-md-9 pd-0">
+                    <div class="headr-combo">
+                        <div class="hamburger">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
+                        <div class="nav-links">
+                            <ul class="nav-list">
+                                <div class="mob-logo">
+                                    <a href="">
+                                        <img src="assets/img/logo/logo-icon-png-8.jpg" alt="logo" height="auto"
+                                            width="auto" />
+                                    </a>
+                                </div>
+                                <li class="active">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">All page</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-success">
+                                        Upcomming Tour
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Header -->
+
+
+
+    <!-- Start Todo List -->
+
+    <div class="container1">
+        <div class="todo-app">
+            <h2>To-Do List</h2>
+            <div class="row p-0">
+                <div class="input-btn">
+                    <input type="text" id="input-box" placeholder="Add Your Text">
+                    <button onclick="AddTask()" class="todo-add-btn">Add</button>
+                </div>
+                <ul id="list-cont">
+                    <!-- <li class="checked">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li>
+                    <li>Task 4</li>
+                    <li>Task 5</li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Todo List -->
+
+
+
+
+    <!------ Start Footer Section ------>
+    <section class="footer">
+        <div class="container">
+            <div class="footer_col">
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-4 justify-content-center">
+                    <div class="col">
+                        <h3 class="foot-lable widget-title">
+                            INFORMATION
+                        </h3>
+                        <ul class="f-items">
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#"> About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Customer Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy </a>
+                            </li>
+                            <li>
+                                <a href="#">Search Term</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3 class="foot-lable widget-title">
+                            WHY BUY FROM US
+                        </h3>
+                        <ul class="f-items">
+                            <li>
+                                <a href="#">Shipping</a>
+                            </li>
+                            <li>
+                                <a href="#">Shipping & Return Policy</a>
+                            </li>
+                            <li>
+                                <a href="#"> Secure Shopping
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Term Of Use</a>
+                            </li>
+                            <li>
+                                <a href="#">Store Locator </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3 class="foot-lable widget-title">
+                            MY ACCOUNT
+                        </h3>
+                        <ul class="f-items">
+                            <li>
+                                <a href="#">Sign In</a>
+                            </li>
+                            <li>
+                                <a href="#"> View Cart</a>
+                            </li>
+                            <li>
+                                <a href="#"> My Wishlist
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Track Of Order</a>
+                            </li>
+                            <li>
+                                <a href="#">Faq</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3 class="foot-lable">
+                            FOLLOW US
+                        </h3>
+                        <ul class="social-icon-footer">
+                            <li>
+                                <a href="">
+                                    <span class="f-social-icon"><i class="fa-brands fa-instagram"></i></span>
+                                </a>
+                                <a href="">
+                                    <span class="f-social-icon"><i class="fa-brands fa-facebook"></i></span>
+                                </a>
+                                <a href="">
+                                    <span class="f-social-icon"><i class="fa-brands fa-youtube"></i></span>
+                                </a>
+                                <a href="">
+                                    <span class="f-social-icon"><i class="fa-brands fa-twitter"></i></span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="#">*Some exclusions apply. Click here for details.</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="footer-bottom">
+            <p>All rights reserved. © <span id="currentYear">2024</span> Amins Pathology Referral Laboratory, A unit of
+                Dr.
+                Lal Pathlabs. Designed &amp;
+                Developed by <span><a href="https://abym.in" target="_blank">AbyM Technology</a></span></p>
+        </section>
+    </section>
+    <!------ End Footer Section ------>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

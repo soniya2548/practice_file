@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width= , initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/mobile.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+
+</head>
+
+<body>
+  <!-- Start Header -->
+  <div class="header">
+    <div class="main-headr">
+      <div class="top-head">
+        <div class="head-phn">
+          <a href="tel:+91-7838275539" class="">
+            <span><img src="assets/img/icon/mobile.png" alt="" /></span>
+            +91-7838275539
+          </a>
+        </div>
+        <div class="head-social-icon">
+          <a href="">
+            <img src="assets/img/social-icon/twitter.png" alt="" />
+          </a>
+          <a href="">
+            <img src="assets/img/social-icon/facebook.png" alt="" />
+          </a>
+          <a href="">
+            <img src="assets/img/social-icon/instagram.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <nav class="navigation">
+        <div class="col-md-3">
+          <div class="brand">
+            <a href="#"><img src="assets/img/logo/logo-icon-png-8.jpg" alt="" /></a>
+          </div>
+        </div>
+        <div class="col-md-9 pd-0">
+          <div class="headr-combo">
+            <div class="hamburger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+            <div class="nav-links">
+              <ul class="nav-list">
+                <div class="mob-logo">
+                  <a href="">
+                    <img src="assets/img/logo/logo-icon-png-8.jpg" alt="logo" height="auto" width="auto" />
+                  </a>
+                </div>
+                <li class="active">
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">All page</a>
+                </li>
+                <li>
+                  <a href="#">Contact Us</a>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-success">
+                    Upcomming Tour
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- End Header -->
+
+  <!-- Start Contact us -->
+  <div class="cont-us">
+    <div class="container">
+      <div class="contact-form">
+        <div class="form-head">
+          <h1>Contact Us</h1>
+        </div>
+        <form id="myForm" action="">
+          <div class="form-itmes">
+            <div class="f-item">
+              <label for="">first Name</label><br>
+              <input type="text" name="fname" placeholder="Enter your first name" validate="true">
+              <span class="alert">This field is required*</span>
+            </div>
+            <div class="f-item">
+              <label for="">Last Name</label><br>
+              <input type="text" name="lname" placeholder="Enter your Last name" validate="true">
+              <span class="alert">This field is required*</span>
+            </div>
+          </div>
+          <div class="form-itmes">
+            <div class="f-item">
+              <label for="">Phone Number</label><br>
+              <input type="number" name="phone" placeholder="Enter your phone number " validate="true">
+              <span class="alert">This field is required*</span>
+            </div>
+            <div class="f-item">
+              <label for="">Email</label><br>
+              <input type="email" name="email" placeholder="Enter your email address" validate="true">
+              <span class="alert">This field is required*</span>
+            </div>
+          </div>
+          <div class="form-itmes">
+            <div class="f-item">
+              <label for="">City</label><br>
+              <select name="city" id="" validate="true">
+                <option value="">--Select City--</option>
+                <option value="agra">Agra</option>
+                <option value="noida">Noida</option>
+                <option value="delhi">Delhi</option>
+                <option value="lucknow">Lucknow</option>
+              </select>
+              <span class="alert">This field is required*</span>
+            </div>
+            <div class="f-item">
+              <label for="">Gender</label><br>
+              <ul class="select-check" validate="true">
+                <li>
+                  <input type="radio" id="male" name="gender" value="male">
+                  <label for="male">Male</label>
+                </li>
+                <li>
+                  <input type="radio" id="female" name="gender" value="female">
+                  <label for="female">Female</label>
+                </li>
+                <li>
+                  <input type="radio" id="other" name="gender" value="other">
+                  <label for="other">Other</label>
+                </li>
+              </ul>
+              <span class="alert">This field is required*</span>
+            </div>
+          </div>
+          <div class="form-itmes">
+            <div class="f-item">
+              <label for="attachedfile">Example file input</label><br>
+              <input type="file" id="attachedfile" validate="true">
+              <span class="alert">This field is required*</span>
+            </div>
+            <div class="f-item">
+              <label for="">Identity</label><br>
+              <ul class="custom-control" validate="true">
+                <li>
+                  <input type="checkbox" class="custom-control-input" id="customCheck1" validate="true">
+                  <label class="custom-control-label" for="customCheck1">Adhar Card</label>
+                </li>
+                <li>
+                  <input type="checkbox" class="custom-control-input" id="customCheck2" validate="true">
+                  <label class="custom-control-label" for="customCheck2">Pan Card</label>
+                </li>
+              </ul>
+              <span class="alert">This field is required*</span>
+            </div>
+          </div>
+          <div class="form-itmes">
+            <div class="f-item">
+              <div class="form-msg">
+                <label for="attachedfile">Query</label><br>
+                <textarea name="query" id="" placeholder="Enter your query" validate="true"></textarea>
+                <span class="alert">This field is required*</span>
+              </div>
+            </div>
+            <div class="f-item">
+              <label for="">Date</label><br>
+              <input type="date" validate="true">
+              <span class="alert">This field is required*</span>
+            </div>
+          </div>
+
+          <div class="submit-btn">
+            <!-- <input type="submit" value="submit" class="btn btn-success"> -->
+            <button type="submit" class="btn btn-success">submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- End Contact us -->
+
+
+
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

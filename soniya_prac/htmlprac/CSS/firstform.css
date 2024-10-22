@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    background-color: black;
+}
+.contacto {
+    width: 50%;
+    margin: 100px auto;
+    background: #fff;
+    padding: 35px 20px 60px 20px;
+    text-align: center;
+    color: #1ccfcf;
+    font-family: cursive;
+}
+.form-items {
+    width: 100%;
+}
+.first {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+.form-items input {
+    width: 92%;
+    padding: 5px;
+    font-size: 17px;
+    font-family: cursive;
+}
+.f-right{
+    float: right;
+}
+.f-left{
+    float: left;
+}
+#address, #history {
+    width: 98%;
+    margin-top: 20px;
+    height: 164px;
+    resize: none;
+    font-size: 17px;
+    font-family: cursive;
+    /* padding-top: 10px; */
+    padding: 5px;
+}
+button{
+    width: 15%;
+    float: left;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 17px;
+    background: #1ccfcf;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: cursive;
+}
+/* .contacto{
+    width: 600px;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    margin: 100px auto;
+    position: relative;
+}
+.form .form-items{
+    width: 100%;
+    margin-right: 25px;
+}
+.title{
+    text-align: center;
+    padding: 15px;
+    color: #2e9595;
+}
+.first{
+    display: flex;
+    margin-left: 8px;
+}
+.form-items input {
+    width: 98%;
+    padding: 5px 0px 5px 7px;
+    font-size: 18px;
+    margin: 5px;
+} */
